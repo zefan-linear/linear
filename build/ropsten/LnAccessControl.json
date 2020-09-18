@@ -5658,12 +5658,11 @@
         }
       },
       "links": {},
-      "address": "0x1aD44a5A84aa6467c886DeF7742036277Eee2c2D",
-      "transactionHash": "0x57233266092d24e33c6004b0df51ac17bd6f220e11e35803b272af7ecf556ebb"
+      "address": "0x8693857c081C4c13dACa86087f0A4dED86De9261"
     }
   },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2020-09-17T02:46:44.746Z",
+  "updatedAt": "2020-09-18T09:02:25.259Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
