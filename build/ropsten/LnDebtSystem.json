@@ -143,7 +143,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -156,7 +157,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -176,7 +178,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -189,7 +192,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -202,7 +206,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -221,7 +226,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -234,7 +240,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -271,7 +278,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -375,7 +383,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -388,7 +397,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -407,7 +417,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -431,7 +442,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"admin\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"oldAdmin\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newAdmin\",\"type\":\"address\"}],\"name\":\"AdminChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"newFactor\",\"type\":\"uint256\"}],\"name\":\"PushDebtLog\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"oldAddr\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newAddr\",\"type\":\"address\"}],\"name\":\"UpdateAddressStorage\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"debtProportion\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"debtFactor\",\"type\":\"uint256\"}],\"name\":\"UpdateUserDebtLog\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"oldCandidate\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newCandidate\",\"type\":\"address\"}],\"name\":\"candidateChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"updateCachedAddress\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"GetUserCurrentDebtProportion\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"GetUserDebtBalanceInUsd\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"GetUserDebtData\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"debtProportion\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"debtFactor\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"LastSystemDebtFactor\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MAX_DEL_PER_TIME\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_factor\",\"type\":\"uint256\"}],\"name\":\"PushDebtFactor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"SetLastCloseFeePeriodAt\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_debtProportion\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_factor\",\"type\":\"uint256\"}],\"name\":\"UpdateDebt\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_debtProportion\",\"type\":\"uint256\"}],\"name\":\"UpdateUserDebt\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"becomeAdmin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"candidate\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"debtCurrentIndex\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lastCloseAt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"lastDebtFactors\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lastDeletTo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_candidate\",\"type\":\"address\"}],\"name\":\"setCandidate\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract LnAddressStorage\",\"name\":\"_addressStorage\",\"type\":\"address\"}],\"name\":\"updateAddressCache\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"userDebtState\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"debtProportion\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"debtFactor\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"GetUserDebtBalanceInUsd(address)\":{\"returns\":{\"_0\":\"[0] the debt balance of user. [1] system total asset in usd.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnDebtSystem.sol\":\"LnDebtSystem\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/IAsset.sol\":{\"keccak256\":\"0xb32114b8de7ccc480c3e4c444ed815d6faa6b2f8ae57d03970523b4e7efb0fbb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b1df4c7b5cff8304e224da4307ba32f1a3b3ff136f148054c406417c61970254\",\"dweb:/ipfs/QmZ5G8TZfxcjvhVDUTY3pAJpJXcTDJPxawjfiJVnjz8hno\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/IERC20.sol\":{\"keccak256\":\"0xa9d3321ffb425fea3090ab457f0091767926a58ac99ae45ab9d3a5aec4eb479f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0355d8b2a62f76da32bea7285815b167e79ea8443d36e58e72076b23dfd37a43\",\"dweb:/ipfs/QmVszCdDgW4kUehjePR1ZjD1Xf5qRVmasJU8krsrxcqNS4\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnAccessControl.sol\":{\"keccak256\":\"0x7ef764099a7013fe88c20189d19f823336b7c4942c25c7a3c017b349bed379a8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e6d9e29e226dfe138c9d6b32a771408fb0f1a9f0604d3f8d71f6dcbacbf6da35\",\"dweb:/ipfs/QmPDmQK7pWZoMxMPZyfE1dy7UcPGceKsqGq44oLAdeUiDd\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnAddressCache.sol\":{\"keccak256\":\"0x583756096f86a82d5694199f66c4c4d4582d032fa9f8f8fbc76bbd9c725233ae\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://eb1739b6018f010f6a657ff49b0b778e1fd6aca209e21364de06b214675e5024\",\"dweb:/ipfs/QmQjgJEvVKftX3TyXozsLYriZmnBHW5ShQX59qtPjt2gZG\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnAdmin.sol\":{\"keccak256\":\"0x2e762874aecdc79dc0db1d310aae988cf2446e56b934278fabf2a6122bb94a35\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5009be19c173da379e82dbe6075727fcb93534215f25b7bfa1f1efa9b94da9cc\",\"dweb:/ipfs/QmWU1WJ3iAur4kUj5tJq4VGyoBnnS2BiuCu6Sh3PorUevv\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnAsset.sol\":{\"keccak256\":\"0xf89f362e683abc5e9d7bb679cebbe993b17e010924e4cb17b524dc01224f1e6f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://707dbc52cd4d683bfd1289cf9c9b4d3abb1e643df3501619c4c3fb5c4fbfb2ae\",\"dweb:/ipfs/QmSH6E1DHxJyEe1ur342HjCs8vTtvnN1Y9MZtiqQ6sa6t3\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnAssetSystem.sol\":{\"keccak256\":\"0x8b6d192131435e1dee78f674103fb6c363132aa8ef8d437e3225185a490200f6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4ee5bcf080000a6398b825ef03c5c833c4b891da3e9d22b82a20c161b85e93b6\",\"dweb:/ipfs/QmPMuWvpg4YXR4Ed257ZetmKD7dtCFDb2SuWJbSvDtRnWt\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnConfig.sol\":{\"keccak256\":\"0x2c3220e573be006a2cd1e18d29a8a28a49ba6e73f9f8bbf5d928efdf4517654e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ae5696c49c97c8c705d1dbe0e6aa567dbdbb8deff0e9db81f1617337c4743b91\",\"dweb:/ipfs/QmZfQ16UF5fQ9HhAWqtfPMGHdHmMK8EGjMHzcXBDc3XTvL\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnDebtSystem.sol\":{\"keccak256\":\"0xd02af960dae7a3b8ecfe78997d88365d13f561d8e8d1fbd25e16635d634aeb3d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3c2912237f60103f23425acbd7b522765b68df0715c5af92d7d5979c7b67e10d\",\"dweb:/ipfs/Qmb35LZkbZHGauioAT8f9xZ1XbJcDBcczWjNLsvJX6QCdu\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnErc20Handler.sol\":{\"keccak256\":\"0x3653a766f25118588aeb79fa770f42adafd46ba7a0caac260ecc2b2e1effb76f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://44e7598ad1414c94e68eb36e37405fc8c3a08978bc93c86f64cb239936104d85\",\"dweb:/ipfs/QmSTnMskE9zZBFHvG7G6WLNQsqPr1hZYKzH9KGzh8mQtX2\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnOperatorModifier.sol\":{\"keccak256\":\"0x806e605a19f5cd894ddc81d4011358ed0b159ec4b9d11a85d995fbdf4ca96e31\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e82e28c9016f9cc397ca9ffcd7609df11aeef8969fe6e2d529d0dc31a1d05302\",\"dweb:/ipfs/QmTS5DsyiCAJLDAjHFPaUDJMkyLrkxQaVWABBqxw3s6DPX\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnPrices.sol\":{\"keccak256\":\"0x21c9dcbb88650098595c04a619cf030040098e3e824cfd74f57b1ed8c86dcfde\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://eb096dd1334164b33ee174b4349859faeb67b0661f9c6623708826bf9ed001fa\",\"dweb:/ipfs/QmRv5NFUauid1J3MKLoz6c3JNJXJsjaphhy1DQjL5z3twm\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnProxyImpl.sol\":{\"keccak256\":\"0x138df6853671df91c20b9ebb0887a696f3df97ac3d7e92769ff8ef590a0a8d32\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f3c64b58e48674c90d3236f22c47152cad68817aaacd0f8c1af03c0f14f169a4\",\"dweb:/ipfs/QmQvgXkeVQxJpF4TweZ8Efiewkkv472zeV5QYda9DBSX5H\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnTokenStorage.sol\":{\"keccak256\":\"0xf8e8bb32b003e3d2235214a4fae28622c8784b7551999694b0d25304443d1580\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3dbe9d3a025836a95ec6c260a48ff294983839789ccc7bc50a8328777dc00db2\",\"dweb:/ipfs/QmWRfqPLgYPZBdeJwFs5CwjXfGk7nbisVnDZ29y4NCb7KM\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/SafeDecimalMath.sol\":{\"keccak256\":\"0x7b0a4ceb545edc6aa835312d831ec84011fe8f0d6a86b05f6000b6661f42b630\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ad0ad528786f2c592fd2af0f93b17fe3e75c65ed2a462573fa956834466db751\",\"dweb:/ipfs/QmbPT2XQ6XRdCMXgtrF5q4xkCQr5S8bRxgRuHzwQHqPLRn\"]},\"@openzeppelin/contracts/GSN/Context.sol\":{\"keccak256\":\"0xdb26cbf4d028490f49831a7865c2fe1b28db44b535ca8d343785a3b768aae183\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://840b14ce0315c47d49ba328f1f9fa7654ded1c9e1559e6c5e777a7b2dc28bf0a\",\"dweb:/ipfs/QmTLLabn4wcfGro9LEmUXUN2nwKqZSotXMvjDCLXEnLtZP\"]},\"@openzeppelin/contracts/access/AccessControl.sol\":{\"keccak256\":\"0x92f7900d382761c7faefeaced81c6b4f1aae909ed0551803bfe8f27101956360\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://407c0864143968542e5cf5aa7556916d2cf292b201e3dadb65662e9a3aa24187\",\"dweb:/ipfs/QmSnXzYAUaGLGr7uofRbgQraTJvatbjQLBPhyYiMd18oUJ\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x9a9cf02622cd7a64261b10534fc3260449da25c98c9e96d1b4ae8110a20e5806\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2df142592d1dc267d9549049ee3317fa190d2f87eaa565f86ab05ec83f7ab8f5\",\"dweb:/ipfs/QmSkJtcfWo7c42KnL5hho6GFxK6HRNV91XABx1P7xDtfLV\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0xdfb4f812600ba4ce6738c35584ceb8c9433472583051b48ba5b1f66cb758a498\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://df02dffe1c1de089d9b4f6192f0dcf464526f2230f420b3deec4645e0cdd2bff\",\"dweb:/ipfs/QmcqXGAU3KJqwrgUVoGJ2W8osomhSJ4R5kdsRpbuW3fELS\"]},\"@openzeppelin/contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0xb2a11b236f073662f5a196995863f51c11d006bf7c3de158b316dfa1506c4b79\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8651649cf0b9efa18c3b01c030276fa320d41adbdc286833417e7f36e357b2f3\",\"dweb:/ipfs/QmafhM2Nd1aP43QVB1eRRZaqRXQKswNfQcWi8U8xjrxCfN\"]}},\"version\":1}",
@@ -14128,9 +14140,140 @@
     "name": "solc",
     "version": "0.6.12+commit.27d51765.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "3": {
+      "events": {
+        "0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldAdmin",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newAdmin",
+              "type": "address"
+            }
+          ],
+          "name": "AdminChanged",
+          "type": "event"
+        },
+        "0xb8a820a3a119d5a246fc69ab3f488a246d2bbaa2e1571331ba2fd03111a8d76e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "newFactor",
+              "type": "uint256"
+            }
+          ],
+          "name": "PushDebtLog",
+          "type": "event"
+        },
+        "0x6962a4017857b175eec63f241c75c01bb65996cf3d3cf239f81a79703d193fb0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldAddr",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newAddr",
+              "type": "address"
+            }
+          ],
+          "name": "UpdateAddressStorage",
+          "type": "event"
+        },
+        "0x13ff2faa1ac98e72ddd0663ed7a48704f7e2537334a50d2318a5e8efc74674c1": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "debtProportion",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "debtFactor",
+              "type": "uint256"
+            }
+          ],
+          "name": "UpdateUserDebtLog",
+          "type": "event"
+        },
+        "0x0faed18be9e8f4d4c05dfbcc80ea2c97a0be729614d766827778f60890c02cab": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldCandidate",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newCandidate",
+              "type": "address"
+            }
+          ],
+          "name": "candidateChanged",
+          "type": "event"
+        },
+        "0x45a7f8d84f7ad724869d024abcaa743ae6aec455a969df76b5d1e9c5cac4d2ae": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "bytes32",
+              "name": "name",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            }
+          ],
+          "name": "updateCachedAddress",
+          "type": "event"
+        }
+      },
+      "links": {
+        "SafeDecimalMath": "0x93d7Fe915848aB6782399ae301dC6826e7C101c7"
+      },
+      "address": "0xE9D86F9f32C79d017F39Ed4661a32D65b7A2F804",
+      "transactionHash": "0x4b3e92721626cf56b3e4dd3afd5b8fb0c50362dc488d4309c12380281834e7ac"
+    }
+  },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2020-09-18T05:48:43.657Z",
+  "updatedAt": "2020-09-18T09:01:31.006Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {
