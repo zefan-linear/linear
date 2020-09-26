@@ -333,7 +333,7 @@
         "id": 1451,
         "nodeType": "ImportDirective",
         "scope": 1907,
-        "sourceUnit": 10661,
+        "sourceUnit": 10718,
         "src": "110:51:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -344,7 +344,7 @@
         "id": 1452,
         "nodeType": "ImportDirective",
         "scope": 1907,
-        "sourceUnit": 11350,
+        "sourceUnit": 11407,
         "src": "163:52:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -355,7 +355,7 @@
         "id": 1453,
         "nodeType": "ImportDirective",
         "scope": 1907,
-        "sourceUnit": 10865,
+        "sourceUnit": 10922,
         "src": "217:51:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -366,7 +366,7 @@
         "id": 1454,
         "nodeType": "ImportDirective",
         "scope": 1907,
-        "sourceUnit": 10159,
+        "sourceUnit": 10216,
         "src": "270:31:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -476,10 +476,10 @@
               "id": 1464,
               "name": "Pausable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 11349,
+              "referencedDeclaration": 11406,
               "src": "634:8:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Pausable_$11349",
+                "typeIdentifier": "t_contract$_Pausable_$11406",
                 "typeString": "contract Pausable"
               }
             },
@@ -509,8 +509,8 @@
         "contractDependencies": [
           714,
           877,
-          10181,
-          11349
+          10238,
+          11406
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -519,8 +519,8 @@
         "linearizedBaseContracts": [
           1906,
           714,
-          11349,
-          10181,
+          11406,
+          10238,
           877
         ],
         "name": "LnBuildBurnSystem",
@@ -533,10 +533,10 @@
               "id": 1468,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 10660,
+              "referencedDeclaration": 10717,
               "src": "672:8:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$10660",
+                "typeIdentifier": "t_contract$_SafeMath_$10717",
                 "typeString": "library SafeMath"
               }
             },
@@ -560,10 +560,10 @@
               "id": 1471,
               "name": "SafeDecimalMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 10158,
+              "referencedDeclaration": 10215,
               "src": "702:15:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeDecimalMath_$10158",
+                "typeIdentifier": "t_contract$_SafeDecimalMath_$10215",
                 "typeString": "library SafeDecimalMath"
               }
             },
@@ -587,10 +587,10 @@
               "id": 1474,
               "name": "Address",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 10864,
+              "referencedDeclaration": 10921,
               "src": "739:7:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Address_$10864",
+                "typeIdentifier": "t_contract$_Address_$10921",
                 "typeString": "library Address"
               }
             },
@@ -1033,7 +1033,7 @@
                             "name": "_unpause",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 11348,
+                            "referencedDeclaration": 11405,
                             "src": "1451:8:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
@@ -1079,7 +1079,7 @@
                             "name": "_pause",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 11332,
+                            "referencedDeclaration": 11389,
                             "src": "1410:6:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
@@ -3276,10 +3276,10 @@
                             "name": "SafeDecimalMath",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10158,
+                            "referencedDeclaration": 10215,
                             "src": "3130:15:8",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_SafeDecimalMath_$10158_$",
+                              "typeIdentifier": "t_type$_t_contract$_SafeDecimalMath_$10215_$",
                               "typeString": "type(library SafeDecimalMath)"
                             }
                           },
@@ -3290,7 +3290,7 @@
                           "lValueRequested": false,
                           "memberName": "unit",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 9927,
+                          "referencedDeclaration": 9984,
                           "src": "3130:20:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -3417,7 +3417,7 @@
                           "lValueRequested": false,
                           "memberName": "mul",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 10573,
+                          "referencedDeclaration": 10630,
                           "src": "3073:40:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -3446,7 +3446,7 @@
                       "lValueRequested": false,
                       "memberName": "div",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10590,
+                      "referencedDeclaration": 10647,
                       "src": "3073:56:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -3922,7 +3922,7 @@
                       "lValueRequested": false,
                       "memberName": "multiplyDecimal",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9952,
+                      "referencedDeclaration": 10009,
                       "src": "3429:52:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -4271,7 +4271,7 @@
                       "lValueRequested": false,
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10493,
+                      "referencedDeclaration": 10550,
                       "src": "3764:25:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -4375,7 +4375,7 @@
                       "lValueRequested": false,
                       "memberName": "divideDecimalRoundPrecise",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10112,
+                      "referencedDeclaration": 10169,
                       "src": "3867:32:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -4470,10 +4470,10 @@
                             "name": "SafeDecimalMath",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10158,
+                            "referencedDeclaration": 10215,
                             "src": "3974:15:8",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_SafeDecimalMath_$10158_$",
+                              "typeIdentifier": "t_type$_t_contract$_SafeDecimalMath_$10215_$",
                               "typeString": "type(library SafeDecimalMath)"
                             }
                           },
@@ -4484,7 +4484,7 @@
                           "lValueRequested": false,
                           "memberName": "preciseUnit",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 9935,
+                          "referencedDeclaration": 9992,
                           "src": "3974:27:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -4513,7 +4513,7 @@
                       "lValueRequested": false,
                       "memberName": "sub",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10510,
+                      "referencedDeclaration": 10567,
                       "src": "3974:33:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -4740,7 +4740,7 @@
                                   "lValueRequested": false,
                                   "memberName": "add",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 10493,
+                                  "referencedDeclaration": 10550,
                                   "src": "4173:22:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -4769,7 +4769,7 @@
                               "lValueRequested": false,
                               "memberName": "divideDecimalRoundPrecise",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 10112,
+                              "referencedDeclaration": 10169,
                               "src": "4173:56:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -5038,7 +5038,7 @@
                   "name": "whenNotPaused",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 11306,
+                  "referencedDeclaration": 11363,
                   "src": "3262:13:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -5654,7 +5654,7 @@
                       "lValueRequested": false,
                       "memberName": "sub",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10510,
+                      "referencedDeclaration": 10567,
                       "src": "5000:25:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -5874,7 +5874,7 @@
                             "lValueRequested": false,
                             "memberName": "divideDecimalRoundPrecise",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 10112,
+                            "referencedDeclaration": 10169,
                             "src": "5153:36:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -5957,10 +5957,10 @@
                                     "name": "SafeDecimalMath",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 10158,
+                                    "referencedDeclaration": 10215,
                                     "src": "5245:15:8",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_type$_t_contract$_SafeDecimalMath_$10158_$",
+                                      "typeIdentifier": "t_type$_t_contract$_SafeDecimalMath_$10215_$",
                                       "typeString": "type(library SafeDecimalMath)"
                                     }
                                   },
@@ -5971,7 +5971,7 @@
                                   "lValueRequested": false,
                                   "memberName": "preciseUnit",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 9935,
+                                  "referencedDeclaration": 9992,
                                   "src": "5245:27:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -6000,7 +6000,7 @@
                               "lValueRequested": false,
                               "memberName": "add",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 10493,
+                              "referencedDeclaration": 10550,
                               "src": "5245:33:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -6225,7 +6225,7 @@
                             "lValueRequested": false,
                             "memberName": "sub",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 10510,
+                            "referencedDeclaration": 10567,
                             "src": "5429:22:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -6317,7 +6317,7 @@
                               "lValueRequested": false,
                               "memberName": "divideDecimalRoundPrecise",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 10112,
+                              "referencedDeclaration": 10169,
                               "src": "5502:33:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -6586,7 +6586,7 @@
                   "name": "whenNotPaused",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 11306,
+                  "referencedDeclaration": 11363,
                   "src": "4529:13:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -6733,7 +6733,7 @@
         "id": 1451,
         "nodeType": "ImportDirective",
         "scope": 1907,
-        "sourceUnit": 10661,
+        "sourceUnit": 10718,
         "src": "110:51:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -6744,7 +6744,7 @@
         "id": 1452,
         "nodeType": "ImportDirective",
         "scope": 1907,
-        "sourceUnit": 11350,
+        "sourceUnit": 11407,
         "src": "163:52:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -6755,7 +6755,7 @@
         "id": 1453,
         "nodeType": "ImportDirective",
         "scope": 1907,
-        "sourceUnit": 10865,
+        "sourceUnit": 10922,
         "src": "217:51:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -6766,7 +6766,7 @@
         "id": 1454,
         "nodeType": "ImportDirective",
         "scope": 1907,
-        "sourceUnit": 10159,
+        "sourceUnit": 10216,
         "src": "270:31:8",
         "symbolAliases": [],
         "unitAlias": ""
@@ -6876,10 +6876,10 @@
               "id": 1464,
               "name": "Pausable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 11349,
+              "referencedDeclaration": 11406,
               "src": "634:8:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Pausable_$11349",
+                "typeIdentifier": "t_contract$_Pausable_$11406",
                 "typeString": "contract Pausable"
               }
             },
@@ -6909,8 +6909,8 @@
         "contractDependencies": [
           714,
           877,
-          10181,
-          11349
+          10238,
+          11406
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -6919,8 +6919,8 @@
         "linearizedBaseContracts": [
           1906,
           714,
-          11349,
-          10181,
+          11406,
+          10238,
           877
         ],
         "name": "LnBuildBurnSystem",
@@ -6933,10 +6933,10 @@
               "id": 1468,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 10660,
+              "referencedDeclaration": 10717,
               "src": "672:8:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$10660",
+                "typeIdentifier": "t_contract$_SafeMath_$10717",
                 "typeString": "library SafeMath"
               }
             },
@@ -6960,10 +6960,10 @@
               "id": 1471,
               "name": "SafeDecimalMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 10158,
+              "referencedDeclaration": 10215,
               "src": "702:15:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeDecimalMath_$10158",
+                "typeIdentifier": "t_contract$_SafeDecimalMath_$10215",
                 "typeString": "library SafeDecimalMath"
               }
             },
@@ -6987,10 +6987,10 @@
               "id": 1474,
               "name": "Address",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 10864,
+              "referencedDeclaration": 10921,
               "src": "739:7:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Address_$10864",
+                "typeIdentifier": "t_contract$_Address_$10921",
                 "typeString": "library Address"
               }
             },
@@ -7433,7 +7433,7 @@
                             "name": "_unpause",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 11348,
+                            "referencedDeclaration": 11405,
                             "src": "1451:8:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
@@ -7479,7 +7479,7 @@
                             "name": "_pause",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 11332,
+                            "referencedDeclaration": 11389,
                             "src": "1410:6:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
@@ -9676,10 +9676,10 @@
                             "name": "SafeDecimalMath",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10158,
+                            "referencedDeclaration": 10215,
                             "src": "3130:15:8",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_SafeDecimalMath_$10158_$",
+                              "typeIdentifier": "t_type$_t_contract$_SafeDecimalMath_$10215_$",
                               "typeString": "type(library SafeDecimalMath)"
                             }
                           },
@@ -9690,7 +9690,7 @@
                           "lValueRequested": false,
                           "memberName": "unit",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 9927,
+                          "referencedDeclaration": 9984,
                           "src": "3130:20:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -9817,7 +9817,7 @@
                           "lValueRequested": false,
                           "memberName": "mul",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 10573,
+                          "referencedDeclaration": 10630,
                           "src": "3073:40:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -9846,7 +9846,7 @@
                       "lValueRequested": false,
                       "memberName": "div",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10590,
+                      "referencedDeclaration": 10647,
                       "src": "3073:56:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -10322,7 +10322,7 @@
                       "lValueRequested": false,
                       "memberName": "multiplyDecimal",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 9952,
+                      "referencedDeclaration": 10009,
                       "src": "3429:52:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -10671,7 +10671,7 @@
                       "lValueRequested": false,
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10493,
+                      "referencedDeclaration": 10550,
                       "src": "3764:25:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -10775,7 +10775,7 @@
                       "lValueRequested": false,
                       "memberName": "divideDecimalRoundPrecise",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10112,
+                      "referencedDeclaration": 10169,
                       "src": "3867:32:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -10870,10 +10870,10 @@
                             "name": "SafeDecimalMath",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 10158,
+                            "referencedDeclaration": 10215,
                             "src": "3974:15:8",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_SafeDecimalMath_$10158_$",
+                              "typeIdentifier": "t_type$_t_contract$_SafeDecimalMath_$10215_$",
                               "typeString": "type(library SafeDecimalMath)"
                             }
                           },
@@ -10884,7 +10884,7 @@
                           "lValueRequested": false,
                           "memberName": "preciseUnit",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 9935,
+                          "referencedDeclaration": 9992,
                           "src": "3974:27:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -10913,7 +10913,7 @@
                       "lValueRequested": false,
                       "memberName": "sub",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10510,
+                      "referencedDeclaration": 10567,
                       "src": "3974:33:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -11140,7 +11140,7 @@
                                   "lValueRequested": false,
                                   "memberName": "add",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 10493,
+                                  "referencedDeclaration": 10550,
                                   "src": "4173:22:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -11169,7 +11169,7 @@
                               "lValueRequested": false,
                               "memberName": "divideDecimalRoundPrecise",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 10112,
+                              "referencedDeclaration": 10169,
                               "src": "4173:56:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -11438,7 +11438,7 @@
                   "name": "whenNotPaused",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 11306,
+                  "referencedDeclaration": 11363,
                   "src": "3262:13:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -12054,7 +12054,7 @@
                       "lValueRequested": false,
                       "memberName": "sub",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 10510,
+                      "referencedDeclaration": 10567,
                       "src": "5000:25:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -12274,7 +12274,7 @@
                             "lValueRequested": false,
                             "memberName": "divideDecimalRoundPrecise",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 10112,
+                            "referencedDeclaration": 10169,
                             "src": "5153:36:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -12357,10 +12357,10 @@
                                     "name": "SafeDecimalMath",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 10158,
+                                    "referencedDeclaration": 10215,
                                     "src": "5245:15:8",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_type$_t_contract$_SafeDecimalMath_$10158_$",
+                                      "typeIdentifier": "t_type$_t_contract$_SafeDecimalMath_$10215_$",
                                       "typeString": "type(library SafeDecimalMath)"
                                     }
                                   },
@@ -12371,7 +12371,7 @@
                                   "lValueRequested": false,
                                   "memberName": "preciseUnit",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 9935,
+                                  "referencedDeclaration": 9992,
                                   "src": "5245:27:8",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -12400,7 +12400,7 @@
                               "lValueRequested": false,
                               "memberName": "add",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 10493,
+                              "referencedDeclaration": 10550,
                               "src": "5245:33:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -12625,7 +12625,7 @@
                             "lValueRequested": false,
                             "memberName": "sub",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 10510,
+                            "referencedDeclaration": 10567,
                             "src": "5429:22:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -12717,7 +12717,7 @@
                               "lValueRequested": false,
                               "memberName": "divideDecimalRoundPrecise",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 10112,
+                              "referencedDeclaration": 10169,
                               "src": "5502:33:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -12986,7 +12986,7 @@
                   "name": "whenNotPaused",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 11306,
+                  "referencedDeclaration": 11363,
                   "src": "4529:13:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -13201,7 +13201,7 @@
     }
   },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2020-09-22T09:45:57.479Z",
+  "updatedAt": "2020-09-26T08:39:48.319Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
