@@ -118,7 +118,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -138,7 +139,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -157,7 +159,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -181,7 +184,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -200,7 +204,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -219,7 +224,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -238,7 +244,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -326,7 +333,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -339,7 +347,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -352,7 +361,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_admin\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"oldAdmin\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newAdmin\",\"type\":\"address\"}],\"name\":\"AdminChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"AssetAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"AssetRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"oldCandidate\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"newCandidate\",\"type\":\"address\"}],\"name\":\"candidateChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"updateStorageAddress\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"contract IAsset\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"addAsset\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"assetNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"becomeAdmin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"candidate\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"}],\"name\":\"getAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"reason\",\"type\":\"string\"}],\"name\":\"getAddressWithRequire\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAssetAddresses\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"mAddress2Names\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"mAddrs\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"mAssetList\",\"outputs\":[{\"internalType\":\"contract IAsset\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"}],\"name\":\"removeAsset\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_candidate\",\"type\":\"address\"}],\"name\":\"setCandidate\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalAssetsInUsd\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"rTotal\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"name\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"dest\",\"type\":\"address\"}],\"name\":\"update\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"names\",\"type\":\"bytes32[]\"},{\"internalType\":\"address[]\",\"name\":\"destinations\",\"type\":\"address[]\"}],\"name\":\"updateAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnAssetSystem.sol\":\"LnAssetSystem\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/d/working/linearFinance/smartcontracts/contracts/IAsset.sol\":{\"keccak256\":\"0xb32114b8de7ccc480c3e4c444ed815d6faa6b2f8ae57d03970523b4e7efb0fbb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b1df4c7b5cff8304e224da4307ba32f1a3b3ff136f148054c406417c61970254\",\"dweb:/ipfs/QmZ5G8TZfxcjvhVDUTY3pAJpJXcTDJPxawjfiJVnjz8hno\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/IERC20.sol\":{\"keccak256\":\"0xa9d3321ffb425fea3090ab457f0091767926a58ac99ae45ab9d3a5aec4eb479f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0355d8b2a62f76da32bea7285815b167e79ea8443d36e58e72076b23dfd37a43\",\"dweb:/ipfs/QmVszCdDgW4kUehjePR1ZjD1Xf5qRVmasJU8krsrxcqNS4\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnAccessControl.sol\":{\"keccak256\":\"0x7ef764099a7013fe88c20189d19f823336b7c4942c25c7a3c017b349bed379a8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e6d9e29e226dfe138c9d6b32a771408fb0f1a9f0604d3f8d71f6dcbacbf6da35\",\"dweb:/ipfs/QmPDmQK7pWZoMxMPZyfE1dy7UcPGceKsqGq44oLAdeUiDd\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnAddressCache.sol\":{\"keccak256\":\"0x583756096f86a82d5694199f66c4c4d4582d032fa9f8f8fbc76bbd9c725233ae\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://eb1739b6018f010f6a657ff49b0b778e1fd6aca209e21364de06b214675e5024\",\"dweb:/ipfs/QmQjgJEvVKftX3TyXozsLYriZmnBHW5ShQX59qtPjt2gZG\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnAdmin.sol\":{\"keccak256\":\"0x2e762874aecdc79dc0db1d310aae988cf2446e56b934278fabf2a6122bb94a35\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5009be19c173da379e82dbe6075727fcb93534215f25b7bfa1f1efa9b94da9cc\",\"dweb:/ipfs/QmWU1WJ3iAur4kUj5tJq4VGyoBnnS2BiuCu6Sh3PorUevv\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnAsset.sol\":{\"keccak256\":\"0xf89f362e683abc5e9d7bb679cebbe993b17e010924e4cb17b524dc01224f1e6f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://707dbc52cd4d683bfd1289cf9c9b4d3abb1e643df3501619c4c3fb5c4fbfb2ae\",\"dweb:/ipfs/QmSH6E1DHxJyEe1ur342HjCs8vTtvnN1Y9MZtiqQ6sa6t3\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnAssetSystem.sol\":{\"keccak256\":\"0xb0245b7164f912a7e25edc3ce5e0421b72965795f9908343b2359f5cdf549d5e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7da672f8b79e909d399ff0734d2df7e54bb44a3048dbaa79e8fb323c2f6648f7\",\"dweb:/ipfs/Qmb1NGsCsFVeogTNJr7dWw4m5nYGdy4pvzzWUFdywhUjyb\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnErc20Handler.sol\":{\"keccak256\":\"0x3653a766f25118588aeb79fa770f42adafd46ba7a0caac260ecc2b2e1effb76f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://44e7598ad1414c94e68eb36e37405fc8c3a08978bc93c86f64cb239936104d85\",\"dweb:/ipfs/QmSTnMskE9zZBFHvG7G6WLNQsqPr1hZYKzH9KGzh8mQtX2\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnOperatorModifier.sol\":{\"keccak256\":\"0x806e605a19f5cd894ddc81d4011358ed0b159ec4b9d11a85d995fbdf4ca96e31\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e82e28c9016f9cc397ca9ffcd7609df11aeef8969fe6e2d529d0dc31a1d05302\",\"dweb:/ipfs/QmTS5DsyiCAJLDAjHFPaUDJMkyLrkxQaVWABBqxw3s6DPX\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnPrices.sol\":{\"keccak256\":\"0x21c9dcbb88650098595c04a619cf030040098e3e824cfd74f57b1ed8c86dcfde\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://eb096dd1334164b33ee174b4349859faeb67b0661f9c6623708826bf9ed001fa\",\"dweb:/ipfs/QmRv5NFUauid1J3MKLoz6c3JNJXJsjaphhy1DQjL5z3twm\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnProxyImpl.sol\":{\"keccak256\":\"0x138df6853671df91c20b9ebb0887a696f3df97ac3d7e92769ff8ef590a0a8d32\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f3c64b58e48674c90d3236f22c47152cad68817aaacd0f8c1af03c0f14f169a4\",\"dweb:/ipfs/QmQvgXkeVQxJpF4TweZ8Efiewkkv472zeV5QYda9DBSX5H\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnTokenStorage.sol\":{\"keccak256\":\"0xf5c1f8f973adcbc3259c001070c537963b76bbac9cbe719dfbaf56bdf0be92db\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8659945bb6182c90014c741fe40b07f04a4e83d40a0c0149c8bd7223df2b37fa\",\"dweb:/ipfs/QmXG55aj59xuqrFBs4bvaGi3RChRu1XKR7BLNmp7FkMia7\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/SafeDecimalMath.sol\":{\"keccak256\":\"0x7b0a4ceb545edc6aa835312d831ec84011fe8f0d6a86b05f6000b6661f42b630\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ad0ad528786f2c592fd2af0f93b17fe3e75c65ed2a462573fa956834466db751\",\"dweb:/ipfs/QmbPT2XQ6XRdCMXgtrF5q4xkCQr5S8bRxgRuHzwQHqPLRn\"]},\"@openzeppelin/contracts/GSN/Context.sol\":{\"keccak256\":\"0xdb26cbf4d028490f49831a7865c2fe1b28db44b535ca8d343785a3b768aae183\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://840b14ce0315c47d49ba328f1f9fa7654ded1c9e1559e6c5e777a7b2dc28bf0a\",\"dweb:/ipfs/QmTLLabn4wcfGro9LEmUXUN2nwKqZSotXMvjDCLXEnLtZP\"]},\"@openzeppelin/contracts/access/AccessControl.sol\":{\"keccak256\":\"0x92f7900d382761c7faefeaced81c6b4f1aae909ed0551803bfe8f27101956360\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://407c0864143968542e5cf5aa7556916d2cf292b201e3dadb65662e9a3aa24187\",\"dweb:/ipfs/QmSnXzYAUaGLGr7uofRbgQraTJvatbjQLBPhyYiMd18oUJ\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x9a9cf02622cd7a64261b10534fc3260449da25c98c9e96d1b4ae8110a20e5806\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2df142592d1dc267d9549049ee3317fa190d2f87eaa565f86ab05ec83f7ab8f5\",\"dweb:/ipfs/QmSkJtcfWo7c42KnL5hho6GFxK6HRNV91XABx1P7xDtfLV\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0xdfb4f812600ba4ce6738c35584ceb8c9433472583051b48ba5b1f66cb758a498\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://df02dffe1c1de089d9b4f6192f0dcf464526f2230f420b3deec4645e0cdd2bff\",\"dweb:/ipfs/QmcqXGAU3KJqwrgUVoGJ2W8osomhSJ4R5kdsRpbuW3fELS\"]},\"@openzeppelin/contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0xb2a11b236f073662f5a196995863f51c11d006bf7c3de158b316dfa1506c4b79\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8651649cf0b9efa18c3b01c030276fa320d41adbdc286833417e7f36e357b2f3\",\"dweb:/ipfs/QmafhM2Nd1aP43QVB1eRRZaqRXQKswNfQcWi8U8xjrxCfN\"]}},\"version\":1}",
@@ -9053,9 +9063,113 @@
     "name": "solc",
     "version": "0.6.12+commit.27d51765.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "3": {
+      "events": {
+        "0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldAdmin",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newAdmin",
+              "type": "address"
+            }
+          ],
+          "name": "AdminChanged",
+          "type": "event"
+        },
+        "0x40f827e634613815ed6a93089e5fbbf24ed40bdb9390d7ae0f08dc64a03fe575": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "bytes32",
+              "name": "name",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "asset",
+              "type": "address"
+            }
+          ],
+          "name": "AssetAdded",
+          "type": "event"
+        },
+        "0x9d181adb70e733f5235f839c1eed929407ea8526e41d01f49b9fef703e78dddf": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "bytes32",
+              "name": "name",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "asset",
+              "type": "address"
+            }
+          ],
+          "name": "AssetRemoved",
+          "type": "event"
+        },
+        "0x0faed18be9e8f4d4c05dfbcc80ea2c97a0be729614d766827778f60890c02cab": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldCandidate",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newCandidate",
+              "type": "address"
+            }
+          ],
+          "name": "candidateChanged",
+          "type": "event"
+        },
+        "0x256a0ebdf27db05ec0aa6a0db78f9e4071e198ac05bf76f0ca2b505e58287e8a": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "bytes32",
+              "name": "name",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            }
+          ],
+          "name": "updateStorageAddress",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x6fC22E72025f3aF13cB9115F424C596cB7A58CB1",
+      "transactionHash": "0xef929e6dd428f221e3528d44923bbd23dc42a7b9c5f0e35c36f214ecacc3cf3c"
+    }
+  },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2020-09-29T06:03:19.563Z",
+  "updatedAt": "2020-09-30T02:26:44.981Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
