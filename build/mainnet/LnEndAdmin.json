@@ -20,27 +20,27 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"target\",\"type\":\"address\"}],\"name\":\"becomeAdmin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnEndAdmin.sol\":\"LnEndAdmin\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnAdmin.sol\":{\"keccak256\":\"0x2e762874aecdc79dc0db1d310aae988cf2446e56b934278fabf2a6122bb94a35\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5009be19c173da379e82dbe6075727fcb93534215f25b7bfa1f1efa9b94da9cc\",\"dweb:/ipfs/QmWU1WJ3iAur4kUj5tJq4VGyoBnnS2BiuCu6Sh3PorUevv\"]},\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnEndAdmin.sol\":{\"keccak256\":\"0xdc32b3e4a9d65d2e7c240317b0848dd4bedb59ab29903111971e8ec37211fcb7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b7db9ab3a062ad18d55e288e169df2eb01776217bd3bb626b9d21d7ea4a7c386\",\"dweb:/ipfs/QmSn92RM2yB4uy9NXY8Lu3mDUAPwgpfLwx3qbqAMC9SJaY\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610105806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063e768c93c14602d575b600080fd5b606c60048036036020811015604157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050606e565b005b8073ffffffffffffffffffffffffffffffffffffffff166325971dff6040518163ffffffff1660e01b8152600401600060405180830381600087803b15801560b557600080fd5b505af115801560c8573d6000803e3d6000fd5b505050505056fea2646970667358221220aba188bd8bfadef5808e96979160162842134eeede550f9d11c6ead029f6cfa064736f6c634300060c0033",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063e768c93c14602d575b600080fd5b606c60048036036020811015604157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050606e565b005b8073ffffffffffffffffffffffffffffffffffffffff166325971dff6040518163ffffffff1660e01b8152600401600060405180830381600087803b15801560b557600080fd5b505af115801560c8573d6000803e3d6000fd5b505050505056fea2646970667358221220aba188bd8bfadef5808e96979160162842134eeede550f9d11c6ead029f6cfa064736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"target\",\"type\":\"address\"}],\"name\":\"becomeAdmin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnEndAdmin.sol\":\"LnEndAdmin\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnAdmin.sol\":{\"keccak256\":\"0x2e762874aecdc79dc0db1d310aae988cf2446e56b934278fabf2a6122bb94a35\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5009be19c173da379e82dbe6075727fcb93534215f25b7bfa1f1efa9b94da9cc\",\"dweb:/ipfs/QmWU1WJ3iAur4kUj5tJq4VGyoBnnS2BiuCu6Sh3PorUevv\"]},\"/mnt/d/working/linearFinance/smartcontracts/contracts/LnEndAdmin.sol\":{\"keccak256\":\"0xdc32b3e4a9d65d2e7c240317b0848dd4bedb59ab29903111971e8ec37211fcb7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b7db9ab3a062ad18d55e288e169df2eb01776217bd3bb626b9d21d7ea4a7c386\",\"dweb:/ipfs/QmSn92RM2yB4uy9NXY8Lu3mDUAPwgpfLwx3qbqAMC9SJaY\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610105806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063e768c93c14602d575b600080fd5b606c60048036036020811015604157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050606e565b005b8073ffffffffffffffffffffffffffffffffffffffff166325971dff6040518163ffffffff1660e01b8152600401600060405180830381600087803b15801560b557600080fd5b505af115801560c8573d6000803e3d6000fd5b505050505056fea2646970667358221220a4de04227b675d2269a6892f04760b724a97310b8dfdc7b003307c1cfdcc3a1864736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063e768c93c14602d575b600080fd5b606c60048036036020811015604157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050606e565b005b8073ffffffffffffffffffffffffffffffffffffffff166325971dff6040518163ffffffff1660e01b8152600401600060405180830381600087803b15801560b557600080fd5b505af115801560c8573d6000803e3d6000fd5b505050505056fea2646970667358221220a4de04227b675d2269a6892f04760b724a97310b8dfdc7b003307c1cfdcc3a1864736f6c634300060c0033",
   "immutableReferences": {},
   "sourceMap": "88:163:14:-:0;;;115:31;;;;;;;;;;88:163;;;;;;",
   "deployedSourceMap": "88:163:14:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;154:94;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;219:6;211:27;;;:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;154:94;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.6.12;\r\n\r\nimport \"./LnAdmin.sol\";\r\n\r\ncontract LnEndAdmin {\r\n    constructor() public {\r\n\r\n    }\r\n\r\n    function becomeAdmin(address target) external {\r\n        LnAdmin(target).becomeAdmin();\r\n    }\r\n}\r\n",
-  "sourcePath": "/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnEndAdmin.sol",
+  "sourcePath": "/mnt/d/working/linearFinance/smartcontracts/contracts/LnEndAdmin.sol",
   "ast": {
-    "absolutePath": "/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnEndAdmin.sol",
+    "absolutePath": "/mnt/d/working/linearFinance/smartcontracts/contracts/LnEndAdmin.sol",
     "exportedSymbols": {
       "LnEndAdmin": [
-        4696
+        4803
       ]
     },
-    "id": 4697,
+    "id": 4804,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4678,
+        "id": 4785,
         "literals": [
           "solidity",
           "^",
@@ -51,11 +51,11 @@
         "src": "33:24:14"
       },
       {
-        "absolutePath": "/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnAdmin.sol",
+        "absolutePath": "/mnt/d/working/linearFinance/smartcontracts/contracts/LnAdmin.sol",
         "file": "./LnAdmin.sol",
-        "id": 4679,
+        "id": 4786,
         "nodeType": "ImportDirective",
-        "scope": 4697,
+        "scope": 4804,
         "sourceUnit": 878,
         "src": "61:23:14",
         "symbolAliases": [],
@@ -68,22 +68,22 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4696,
+        "id": 4803,
         "linearizedBaseContracts": [
-          4696
+          4803
         ],
         "name": "LnEndAdmin",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4682,
+              "id": 4789,
               "nodeType": "Block",
               "src": "136:10:14",
               "statements": []
             },
             "documentation": null,
-            "id": 4683,
+            "id": 4790,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
@@ -91,18 +91,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 4680,
+              "id": 4787,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "126:2:14"
             },
             "returnParameters": {
-              "id": 4681,
+              "id": 4788,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "136:0:14"
             },
-            "scope": 4696,
+            "scope": 4803,
             "src": "115:31:14",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -110,7 +110,7 @@
           },
           {
             "body": {
-              "id": 4694,
+              "id": 4801,
               "nodeType": "Block",
               "src": "200:48:14",
               "statements": [
@@ -125,11 +125,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 4689,
+                            "id": 4796,
                             "name": "target",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4685,
+                            "referencedDeclaration": 4792,
                             "src": "219:6:14",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -144,7 +144,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 4688,
+                          "id": 4795,
                           "name": "LnAdmin",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -155,7 +155,7 @@
                             "typeString": "type(contract LnAdmin)"
                           }
                         },
-                        "id": 4690,
+                        "id": 4797,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -170,7 +170,7 @@
                           "typeString": "contract LnAdmin"
                         }
                       },
-                      "id": 4691,
+                      "id": 4798,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -184,7 +184,7 @@
                         "typeString": "function () external"
                       }
                     },
-                    "id": 4692,
+                    "id": 4799,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -199,7 +199,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4693,
+                  "id": 4800,
                   "nodeType": "ExpressionStatement",
                   "src": "211:29:14"
                 }
@@ -207,7 +207,7 @@
             },
             "documentation": null,
             "functionSelector": "e768c93c",
-            "id": 4695,
+            "id": 4802,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -215,17 +215,17 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 4686,
+              "id": 4793,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4685,
+                  "id": 4792,
                   "mutability": "mutable",
                   "name": "target",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 4695,
+                  "scope": 4802,
                   "src": "175:14:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -234,7 +234,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4684,
+                    "id": 4791,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "175:7:14",
@@ -251,37 +251,37 @@
               "src": "174:16:14"
             },
             "returnParameters": {
-              "id": 4687,
+              "id": 4794,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "200:0:14"
             },
-            "scope": 4696,
+            "scope": 4803,
             "src": "154:94:14",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 4697,
+        "scope": 4804,
         "src": "88:163:14"
       }
     ],
     "src": "33:220:14"
   },
   "legacyAST": {
-    "absolutePath": "/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnEndAdmin.sol",
+    "absolutePath": "/mnt/d/working/linearFinance/smartcontracts/contracts/LnEndAdmin.sol",
     "exportedSymbols": {
       "LnEndAdmin": [
-        4696
+        4803
       ]
     },
-    "id": 4697,
+    "id": 4804,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4678,
+        "id": 4785,
         "literals": [
           "solidity",
           "^",
@@ -292,11 +292,11 @@
         "src": "33:24:14"
       },
       {
-        "absolutePath": "/mnt/d/working/linearFinance/LinearFinanceToken/contracts/LnAdmin.sol",
+        "absolutePath": "/mnt/d/working/linearFinance/smartcontracts/contracts/LnAdmin.sol",
         "file": "./LnAdmin.sol",
-        "id": 4679,
+        "id": 4786,
         "nodeType": "ImportDirective",
-        "scope": 4697,
+        "scope": 4804,
         "sourceUnit": 878,
         "src": "61:23:14",
         "symbolAliases": [],
@@ -309,22 +309,22 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 4696,
+        "id": 4803,
         "linearizedBaseContracts": [
-          4696
+          4803
         ],
         "name": "LnEndAdmin",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 4682,
+              "id": 4789,
               "nodeType": "Block",
               "src": "136:10:14",
               "statements": []
             },
             "documentation": null,
-            "id": 4683,
+            "id": 4790,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
@@ -332,18 +332,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 4680,
+              "id": 4787,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "126:2:14"
             },
             "returnParameters": {
-              "id": 4681,
+              "id": 4788,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "136:0:14"
             },
-            "scope": 4696,
+            "scope": 4803,
             "src": "115:31:14",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -351,7 +351,7 @@
           },
           {
             "body": {
-              "id": 4694,
+              "id": 4801,
               "nodeType": "Block",
               "src": "200:48:14",
               "statements": [
@@ -366,11 +366,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 4689,
+                            "id": 4796,
                             "name": "target",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4685,
+                            "referencedDeclaration": 4792,
                             "src": "219:6:14",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -385,7 +385,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 4688,
+                          "id": 4795,
                           "name": "LnAdmin",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -396,7 +396,7 @@
                             "typeString": "type(contract LnAdmin)"
                           }
                         },
-                        "id": 4690,
+                        "id": 4797,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -411,7 +411,7 @@
                           "typeString": "contract LnAdmin"
                         }
                       },
-                      "id": 4691,
+                      "id": 4798,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -425,7 +425,7 @@
                         "typeString": "function () external"
                       }
                     },
-                    "id": 4692,
+                    "id": 4799,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -440,7 +440,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4693,
+                  "id": 4800,
                   "nodeType": "ExpressionStatement",
                   "src": "211:29:14"
                 }
@@ -448,7 +448,7 @@
             },
             "documentation": null,
             "functionSelector": "e768c93c",
-            "id": 4695,
+            "id": 4802,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -456,17 +456,17 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 4686,
+              "id": 4793,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4685,
+                  "id": 4792,
                   "mutability": "mutable",
                   "name": "target",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 4695,
+                  "scope": 4802,
                   "src": "175:14:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -475,7 +475,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4684,
+                    "id": 4791,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "175:7:14",
@@ -492,19 +492,19 @@
               "src": "174:16:14"
             },
             "returnParameters": {
-              "id": 4687,
+              "id": 4794,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "200:0:14"
             },
-            "scope": 4696,
+            "scope": 4803,
             "src": "154:94:14",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 4697,
+        "scope": 4804,
         "src": "88:163:14"
       }
     ],
@@ -523,7 +523,7 @@
     }
   },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2020-09-28T08:30:25.439Z",
+  "updatedAt": "2020-10-06T01:27:58.746Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

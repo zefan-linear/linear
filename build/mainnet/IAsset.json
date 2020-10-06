@@ -15,16 +15,16 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"keyName\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/IAsset.sol\":\"IAsset\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/d/working/linearFinance/LinearFinanceToken/contracts/IAsset.sol\":{\"keccak256\":\"0xb32114b8de7ccc480c3e4c444ed815d6faa6b2f8ae57d03970523b4e7efb0fbb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b1df4c7b5cff8304e224da4307ba32f1a3b3ff136f148054c406417c61970254\",\"dweb:/ipfs/QmZ5G8TZfxcjvhVDUTY3pAJpJXcTDJPxawjfiJVnjz8hno\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"keyName\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/d/working/linearFinance/smartcontracts/contracts/IAsset.sol\":\"IAsset\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/d/working/linearFinance/smartcontracts/contracts/IAsset.sol\":{\"keccak256\":\"0xb32114b8de7ccc480c3e4c444ed815d6faa6b2f8ae57d03970523b4e7efb0fbb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b1df4c7b5cff8304e224da4307ba32f1a3b3ff136f148054c406417c61970254\",\"dweb:/ipfs/QmZ5G8TZfxcjvhVDUTY3pAJpJXcTDJPxawjfiJVnjz8hno\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.6.12;\r\n\r\n\r\ninterface IAsset {\r\n    function keyName() external view returns (bytes32);\r\n}\r\n",
-  "sourcePath": "/mnt/d/working/linearFinance/LinearFinanceToken/contracts/IAsset.sol",
+  "sourcePath": "/mnt/d/working/linearFinance/smartcontracts/contracts/IAsset.sol",
   "ast": {
-    "absolutePath": "/mnt/d/working/linearFinance/LinearFinanceToken/contracts/IAsset.sol",
+    "absolutePath": "/mnt/d/working/linearFinance/smartcontracts/contracts/IAsset.sol",
     "exportedSymbols": {
       "IAsset": [
         7
@@ -125,7 +125,7 @@
     "src": "33:110:0"
   },
   "legacyAST": {
-    "absolutePath": "/mnt/d/working/linearFinance/LinearFinanceToken/contracts/IAsset.sol",
+    "absolutePath": "/mnt/d/working/linearFinance/smartcontracts/contracts/IAsset.sol",
     "exportedSymbols": {
       "IAsset": [
         7
@@ -231,7 +231,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.3",
-  "updatedAt": "2020-09-16T14:22:13.962Z",
+  "updatedAt": "2020-10-06T01:27:58.487Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
