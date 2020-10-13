@@ -23291,9 +23291,100 @@
     "name": "solc",
     "version": "0.6.12+commit.27d51765.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "3": {
+      "events": {
+        "0x7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldAdmin",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newAdmin",
+              "type": "address"
+            }
+          ],
+          "name": "AdminChanged",
+          "type": "event"
+        },
+        "0x2346b504ea081713647f1908441e88428ad81a40c85a6e4a664cf0bf20b6a31a": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "feeUsd",
+              "type": "uint256"
+            }
+          ],
+          "name": "ExchangeFee",
+          "type": "event"
+        },
+        "0x953cfafd534d5937356e70b7110370f0c59577ead2e8162eb4969201531c72c4": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "reward",
+              "type": "uint256"
+            }
+          ],
+          "name": "RewardCollateral",
+          "type": "event"
+        },
+        "0x0faed18be9e8f4d4c05dfbcc80ea2c97a0be729614d766827778f60890c02cab": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "oldCandidate",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "newCandidate",
+              "type": "address"
+            }
+          ],
+          "name": "candidateChanged",
+          "type": "event"
+        },
+        "0x45a7f8d84f7ad724869d024abcaa743ae6aec455a969df76b5d1e9c5cac4d2ae": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "bytes32",
+              "name": "name",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            }
+          ],
+          "name": "updateCachedAddress",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xd4Ad973df56b0b4633ad0b21471b5d0599027FD3",
+      "transactionHash": "0xc318d4f1a9901e39349ce527ec1d7b49238ab88d95af0fa37de1592f92c876d4"
+    }
+  },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2020-10-12T08:39:31.072Z",
+  "updatedAt": "2020-10-13T02:51:10.169Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
