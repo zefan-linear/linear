@@ -345,11 +345,11 @@
 			]
 		},
 		"localhost/contracts/LnSimpleStaking.sol": {
-			"keccak256": "0x45eac42b25fe38ac76b8e1ba1b5418040155f51988d29c22158e059ef58590d0",
+			"keccak256": "0xa629f8dbe8d8bdf5eb7b919c027d336f987c10f19249ac280147c9d6dd21f11f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a750e656e30ea2ae9b73d73bf4216c4b98f1dca875e36659aa9a69ec7bb737d9",
-				"dweb:/ipfs/QmTe3yuZUhuBMytH2C4hozbzetdiEwMxTwtPPXC919NoJh"
+				"bzz-raw://35f5f1219018a99bc47db12246a33b2f526230774485b8beddde0793a25736a2",
+				"dweb:/ipfs/QmaQ8LZTNZubnT81mFUhgftynRSzWUAYF6rRf5KL1uBHK4"
 			]
 		},
 		"localhost/contracts/SafeDecimalMath.sol": {
