@@ -13,21 +13,6 @@
 						"type": "address"
 					},
 					{
-						"internalType": "address",
-						"name": "_linaToken",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "_storage",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_rewardPerBlock",
-						"type": "uint256"
-					},
-					{
 						"internalType": "uint256",
 						"name": "_startBlock",
 						"type": "uint256"
@@ -208,70 +193,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "accReward",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "accountStakingListLimit",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "admin",
 				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "amount",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_user",
-						"type": "address"
-					}
-				],
-				"name": "amountOf",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -367,48 +294,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "getPoolInfo",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
-				"name": "getStakesdataLength",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -427,48 +312,6 @@
 						"internalType": "uint256",
 						"name": "total",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_user",
-						"type": "address"
-					}
-				],
-				"name": "getUserInfo",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "linaToken",
-				"outputs": [
-					{
-						"internalType": "contract IERC20",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -521,42 +364,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "mOldStaking",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "mPoolInfo",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "lastRewardBlock",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "accRewardPerShare",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "mTargetAddress",
 				"outputs": [
 					{
@@ -595,29 +402,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "contractAddr",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "blockNb",
-						"type": "uint256"
-					}
-				],
-				"name": "migrationsOldStaking",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "minStakingAmount",
 				"outputs": [
@@ -644,51 +428,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "remainReward",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_user",
-						"type": "address"
-					}
-				],
-				"name": "rewardOf",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "rewardPerBlock",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -704,25 +443,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_linaToken",
-						"type": "address"
-					}
-				],
-				"name": "setLinaToken",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "uint256",
-						"name": "_minStakingAmount",
+						"name": "_newEndBlock",
 						"type": "uint256"
 					}
 				],
-				"name": "setMinStakingAmount",
+				"name": "setEndBlock",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -756,30 +482,17 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_limit",
-						"type": "uint256"
-					}
-				],
-				"name": "setStakingListLimit",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "address",
-						"name": "target",
+						"name": "_stakingPoolAddress",
 						"type": "address"
 					},
 					{
-						"internalType": "uint256",
-						"name": "locktime",
-						"type": "uint256"
+						"internalType": "bool",
+						"name": "_isExtension",
+						"type": "bool"
 					}
 				],
-				"name": "setTransLock",
+				"name": "setStakingPoolList",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -823,68 +536,24 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "stakingStorage",
-				"outputs": [
-					{
-						"internalType": "contract LnLinearStakingStorage",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "startBlock",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "transTokens",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+				"name": "stakingPoolList",
+				"outputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "stakingPool",
 						"type": "address"
-					}
-				],
-				"name": "userInfo",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "reward",
-						"type": "uint256"
 					},
 					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "rewardDebt",
-						"type": "uint256"
+						"internalType": "bool",
+						"name": "isExtension",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -908,7 +577,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"localhost/contracts/LnSimpleStaking.sol": "LnSimpleStaking"
+			"localhost/contracts/LnSimpleStakingManager.sol": "LnSimpleStakingManageer"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -1011,11 +680,19 @@
 			]
 		},
 		"localhost/contracts/LnSimpleStaking.sol": {
-			"keccak256": "0x4ce78577002da47eea5285b89ac42a1c56185e9e7ab24a06aa25a0dc22f010ff",
+			"keccak256": "0x7e2bd1b588c5fd7488aad41b05de55f38907f770dfcc85b438426b13f1abbbef",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://86b2d798ebc52e3e24cbc86bcbdeb3577aaf4d870ae4a161f3461ac0750151cb",
-				"dweb:/ipfs/QmTCHsPExZnE8UuwJzZeCsZSL1oMc3cYmPmMbwAq4bUNaH"
+				"bzz-raw://4ecefff5a5295dcdac0fe45a309fac2180d50364e46c09e05bd569d0e7c3e93d",
+				"dweb:/ipfs/QmaDF5P5qXJ1U8rTxGxP4PwS7N9NkrXhuUcfYdqG8XxuWR"
+			]
+		},
+		"localhost/contracts/LnSimpleStakingManager.sol": {
+			"keccak256": "0x9c0ee343933bfed1415e8d3d497679300ab1a617cfc7de52e66185c74c56e493",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://906345c6066c8fe0c7e3fa748bd10d22ec9433f4f54fb659588ac734454883c8",
+				"dweb:/ipfs/QmUPbAtH7JrqzZ9A6SGUfWrwiiMg5dsVDcKD7YPQxBavNT"
 			]
 		},
 		"localhost/contracts/SafeDecimalMath.sol": {

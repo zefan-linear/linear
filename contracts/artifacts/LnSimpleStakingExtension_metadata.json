@@ -18,11 +18,6 @@
 						"type": "address"
 					},
 					{
-						"internalType": "address",
-						"name": "_storage",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
 						"name": "_rewardPerBlock",
 						"type": "uint256"
@@ -36,11 +31,6 @@
 						"internalType": "uint256",
 						"name": "_endBlock",
 						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "_mOldSimpleStaking",
-						"type": "address"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -397,25 +387,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
-				"name": "getStakesdataLength",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "uint256",
 						"name": "blockNb",
 						"type": "uint256"
@@ -461,25 +432,6 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_user",
-						"type": "address"
-					}
-				],
-				"name": "isUserSynced",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -538,19 +490,6 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "mOldSimpleStaking",
-				"outputs": [
-					{
-						"internalType": "contract LnSimpleStaking",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -665,19 +604,6 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "requireSync",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -864,19 +790,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "stakingStorage",
-				"outputs": [
-					{
-						"internalType": "contract LnLinearStakingStorage",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "startBlock",
 				"outputs": [
 					{
@@ -886,44 +799,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "syncUserInfo",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_user",
-						"type": "address"
-					}
-				],
-				"name": "syncUserInfoData",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -1089,11 +964,11 @@
 			]
 		},
 		"localhost/contracts/LnSimpleStaking.sol": {
-			"keccak256": "0xa629f8dbe8d8bdf5eb7b919c027d336f987c10f19249ac280147c9d6dd21f11f",
+			"keccak256": "0x7e2bd1b588c5fd7488aad41b05de55f38907f770dfcc85b438426b13f1abbbef",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://35f5f1219018a99bc47db12246a33b2f526230774485b8beddde0793a25736a2",
-				"dweb:/ipfs/QmaQ8LZTNZubnT81mFUhgftynRSzWUAYF6rRf5KL1uBHK4"
+				"bzz-raw://4ecefff5a5295dcdac0fe45a309fac2180d50364e46c09e05bd569d0e7c3e93d",
+				"dweb:/ipfs/QmaDF5P5qXJ1U8rTxGxP4PwS7N9NkrXhuUcfYdqG8XxuWR"
 			]
 		},
 		"localhost/contracts/SafeDecimalMath.sol": {
