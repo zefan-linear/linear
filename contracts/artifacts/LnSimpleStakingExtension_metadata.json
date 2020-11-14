@@ -31,6 +31,11 @@
 						"internalType": "uint256",
 						"name": "_endBlock",
 						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_mOldSimpleStaking",
+						"type": "address"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -497,6 +502,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "mOldSimpleStaking",
+				"outputs": [
+					{
+						"internalType": "contract LnSimpleStaking",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "mOldStaking",
 				"outputs": [
 					{
@@ -568,6 +586,57 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "users",
+						"type": "address[]"
+					},
+					{
+						"internalType": "bytes32[]",
+						"name": "actions",
+						"type": "bytes32[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "blockIntake",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "amount",
+						"type": "uint256[]"
+					}
+				],
+				"name": "migrateData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "contractAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockNb",
+						"type": "uint256"
+					}
+				],
+				"name": "migrationsOldStaking",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -650,19 +719,6 @@
 					}
 				],
 				"name": "setCandidate",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_newEndBlock",
-						"type": "uint256"
-					}
-				],
-				"name": "setEndBlock",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -861,7 +917,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"localhost/contracts/LnSimpleStaking.sol": "LnSimpleStakingExtension"
+			"localhost/contracts/LnSimpleStaking_michael3.sol": "LnSimpleStakingExtension"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -963,12 +1019,12 @@
 				"dweb:/ipfs/QmVWvb7khCYyiVYW874WatXEv8QhsdeqVLDuu6CNTdFPBi"
 			]
 		},
-		"localhost/contracts/LnSimpleStaking.sol": {
-			"keccak256": "0x7e2bd1b588c5fd7488aad41b05de55f38907f770dfcc85b438426b13f1abbbef",
+		"localhost/contracts/LnSimpleStaking_michael3.sol": {
+			"keccak256": "0xd2d818ac8a99bb26572ee9e2e332515393153e8bb364443146d5c96018ae6ae2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4ecefff5a5295dcdac0fe45a309fac2180d50364e46c09e05bd569d0e7c3e93d",
-				"dweb:/ipfs/QmaDF5P5qXJ1U8rTxGxP4PwS7N9NkrXhuUcfYdqG8XxuWR"
+				"bzz-raw://992952497591cfc017b0be6842c5e9e391be28c01985e24074efef79d4aa905f",
+				"dweb:/ipfs/QmWEqV7Pu4kUn2FWYuwd4s9cCzrKgigdePPStoQoQtEPnb"
 			]
 		},
 		"localhost/contracts/SafeDecimalMath.sol": {

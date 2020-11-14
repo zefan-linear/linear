@@ -6401,12 +6401,12 @@
         }
       },
       "links": {},
-      "address": "0xEeA12f9aC7fD26EC12d94c3Bca0ac1140e43787C",
-      "transactionHash": "0x96084bcbca5925a751ddfdd08aae2a6efcadf9307c36e8b927beb3ce46dc3aba"
+      "address": "0xD1D9E8916BD8a8774aeE1f581076ced00bd974cB",
+      "transactionHash": "0x151f0ef1125afd92e645639b43bcdaf077888d21ce2fd4615a6ea8c554a70f0b"
     }
   },
-  "schemaVersion": "3.3.1",
-  "updatedAt": "2020-11-07T09:04:51.121Z",
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-11-12T15:07:21.266Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

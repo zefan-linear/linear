@@ -312,7 +312,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"localhost/contracts/LnSimpleStaking.sol": "LnRewardCalculatorTest"
+			"localhost/contracts/LnSimpleStaking_michael3.sol": "LnRewardCalculatorTest"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -414,12 +414,12 @@
 				"dweb:/ipfs/QmVWvb7khCYyiVYW874WatXEv8QhsdeqVLDuu6CNTdFPBi"
 			]
 		},
-		"localhost/contracts/LnSimpleStaking.sol": {
-			"keccak256": "0x4ce78577002da47eea5285b89ac42a1c56185e9e7ab24a06aa25a0dc22f010ff",
+		"localhost/contracts/LnSimpleStaking_michael3.sol": {
+			"keccak256": "0xd2d818ac8a99bb26572ee9e2e332515393153e8bb364443146d5c96018ae6ae2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://86b2d798ebc52e3e24cbc86bcbdeb3577aaf4d870ae4a161f3461ac0750151cb",
-				"dweb:/ipfs/QmTCHsPExZnE8UuwJzZeCsZSL1oMc3cYmPmMbwAq4bUNaH"
+				"bzz-raw://992952497591cfc017b0be6842c5e9e391be28c01985e24074efef79d4aa905f",
+				"dweb:/ipfs/QmWEqV7Pu4kUn2FWYuwd4s9cCzrKgigdePPStoQoQtEPnb"
 			]
 		},
 		"localhost/contracts/SafeDecimalMath.sol": {
