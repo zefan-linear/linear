@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 
-import "./IERC20.sol";
+import "./IBEP20.sol";
 import "./LnAdmin.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 import "@openzeppelin/contracts/utils/Pausable.sol";
@@ -29,7 +29,7 @@ contract LnCollateralSystem is LnAdmin, Pausable, LnAddressCache {
     LnConfig public mConfig;
     LnRewardLocker public mRewardLocker;
 
-    bytes32 constant public Currency_ETH = "ETH";
+    bytes32 constant public Currency_BNB = "BNB";
     bytes32 constant public Currency_LINA = "LINA";
     
     // -------------------------------------------------------
@@ -81,7 +81,7 @@ contract LnCollateralSystem is LnAdmin, Pausable, LnAddressCache {
 
     function updateTokenInfo(bytes32 _currency, address _tokenAddr, uint256 _minCollateral, bool _close) private returns (bool) {
         require(_currency[0] != 0, "symbol cannot empty");
-        require(_currency != Currency_ETH, "ETH is used by system");
+        require(_currency != Currency_BNB, "BNB is used by system");
         require(_tokenAddr != address(0), "token address cannot zero");
         require(_tokenAddr.isContract(), "token address is not a contract");
 
@@ -128,7 +128,7 @@ contract LnCollateralSystem is LnAdmin, Pausable, LnAddressCache {
         }
 
         if (address(this).balance > 0) {
-            rTotal = rTotal.add(address(this).balance.multiplyDecimal(priceGetter.getPrice(Currency_ETH)));
+            rTotal = rTotal.add(address(this).balance.multiplyDecimal(priceGetter.getPrice(Currency_BNB)));
         }
     }
 
@@ -145,8 +145,8 @@ contract LnCollateralSystem is LnAdmin, Pausable, LnAddressCache {
             }
         }
 
-        if (userCollateralData[_user][Currency_ETH].collateral > 0) {
-            rTotal = rTotal.add( userCollateralData[_user][Currency_ETH].collateral.multiplyDecimal(priceGetter.getPrice(Currency_ETH)) );
+        if (userCollateralData[_user][Currency_BNB].collateral > 0) {
+            rTotal = rTotal.add( userCollateralData[_user][Currency_BNB].collateral.multiplyDecimal(priceGetter.getPrice(Currency_BNB)) );
         }
     }
 
@@ -170,9 +170,9 @@ contract LnCollateralSystem is LnAdmin, Pausable, LnAddressCache {
                 retSize++;
             }
         }
-        if (userCollateralData[_user][Currency_ETH].collateral > 0) {
-            rCurrency[retSize] = Currency_ETH;
-            rAmount[retSize] = userCollateralData[_user][Currency_ETH].collateral;
+        if (userCollateralData[_user][Currency_BNB].collateral > 0) {
+            rCurrency[retSize] = Currency_BNB;
+            rAmount[retSize] = userCollateralData[_user][Currency_BNB].collateral;
             retSize++;
         }
 
@@ -188,11 +188,11 @@ contract LnCollateralSystem is LnAdmin, Pausable, LnAddressCache {
 
         address user = msg.sender;
 
-        IERC20 erc20 = IERC20(tokenInfos[_currency].tokenAddr);
-        require(erc20.balanceOf(user) >= _amount, "insufficient balance");
-        require(erc20.allowance(user, address(this)) >= _amount, "insufficient allowance, need approve more amount");
+        IBEP20 bep20 = IBEP20(tokenInfos[_currency].tokenAddr);
+        require(bep20.balanceOf(user) >= _amount, "insufficient balance");
+        require(bep20.allowance(user, address(this)) >= _amount, "insufficient allowance, need approve more amount");
 
-        erc20.transferFrom(user, address(this), _amount);
+        bep20.transferFrom(user, address(this), _amount);
 
         userCollateralData[user][_currency].collateral = userCollateralData[user][_currency].collateral.add(_amount);
         tokeninfo.totalCollateral = tokeninfo.totalCollateral.add(_amount);
@@ -269,7 +269,7 @@ contract LnCollateralSystem is LnAdmin, Pausable, LnAddressCache {
         TokenInfo storage tokeninfo = tokenInfos[_currency];
         tokeninfo.totalCollateral = tokeninfo.totalCollateral.sub(_amount);
 
-        IERC20(tokenInfos[_currency].tokenAddr).transfer(user, _amount);
+        IBEP20(tokenInfos[_currency].tokenAddr).transfer(user, _amount);
 
         emit RedeemCollateral(user, _currency, _amount, userCollateralData[user][_currency].collateral);
     }
@@ -284,40 +284,40 @@ contract LnCollateralSystem is LnAdmin, Pausable, LnAddressCache {
 
     receive() external whenNotPaused payable {
         address user = msg.sender;
-        uint256 ethAmount = msg.value;
-        _CollateralEth(user, ethAmount);
+        uint256 bnbAmount = msg.value;
+        _CollateralBnb(user, bnbAmount);
     }
 
-    function _CollateralEth(address user, uint256 ethAmount) internal {
-        require(ethAmount > 0, "ETH amount need more than zero");
+    function _CollateralBnb(address user, uint256 bnbAmount) internal {
+        require(bnbAmount > 0, "BNB amount need more than zero");
         
-        userCollateralData[user][Currency_ETH].collateral = userCollateralData[user][Currency_ETH].collateral.add(ethAmount);
+        userCollateralData[user][Currency_BNB].collateral = userCollateralData[user][Currency_BNB].collateral.add(bnbAmount);
 
-        emit CollateralLog(user, Currency_ETH, ethAmount, userCollateralData[user][Currency_ETH].collateral);
+        emit CollateralLog(user, Currency_BNB, bnbAmount, userCollateralData[user][Currency_BNB].collateral);
     }
 
-    // payable eth receive, 
-    function CollateralEth() external payable whenNotPaused returns (bool) {
+    // payable bnb receive, 
+    function CollateralBnb() external payable whenNotPaused returns (bool) {
         address user = msg.sender;
-        uint256 ethAmount = msg.value;
-        _CollateralEth(user, ethAmount);
+        uint256 bnbAmount = msg.value;
+        _CollateralBnb(user, bnbAmount);
         return true;
     }
 
-    function RedeemETH(uint256 _amount) external whenNotPaused returns (bool) {
+    function RedeemBNB(uint256 _amount) external whenNotPaused returns (bool) {
         address payable user = msg.sender;
-        require(_amount <= userCollateralData[user][Currency_ETH].collateral, "Can not redeem more than collateral");
+        require(_amount <= userCollateralData[user][Currency_BNB].collateral, "Can not redeem more than collateral");
         require(_amount > 0, "Redeem amount need larger than zero");
 
         uint256 maxRedeemableInUsd = MaxRedeemableInUsd(user);
         
-        uint256 maxRedeem = maxRedeemableInUsd.divideDecimal(priceGetter.getPrice(Currency_ETH));
+        uint256 maxRedeem = maxRedeemableInUsd.divideDecimal(priceGetter.getPrice(Currency_BNB));
         require(_amount <= maxRedeem, "Because lower collateral ratio, can not redeem too much");
 
-        userCollateralData[user][Currency_ETH].collateral = userCollateralData[user][Currency_ETH].collateral.sub(_amount);
+        userCollateralData[user][Currency_BNB].collateral = userCollateralData[user][Currency_BNB].collateral.sub(_amount);
         user.transfer(_amount);
 
-        emit RedeemCollateral(user, Currency_ETH, _amount, userCollateralData[user][Currency_ETH].collateral);
+        emit RedeemCollateral(user, Currency_BNB, _amount, userCollateralData[user][Currency_BNB].collateral);
         return true;
     }
 

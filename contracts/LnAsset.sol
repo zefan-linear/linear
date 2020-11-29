@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 
-import "./LnErc20Handler.sol";
+import "./LnBep20Handler.sol";
 import "./IAsset.sol";
 import "./LnAccessControl.sol";
 import "./LnAddressCache.sol";
 
-contract LnAsset is LnErc20Handler, IAsset, LnAddressCache {
+contract LnAsset is LnBep20Handler, IAsset, LnAddressCache {
     bytes32  mKeyName;
 
     // -------------------------------------------------------
@@ -20,7 +20,7 @@ contract LnAsset is LnErc20Handler, IAsset, LnAddressCache {
 
     constructor( bytes32 _key, address payable _proxy, LnTokenStorage _tokenStorage, string memory _name, string memory _symbol,
         uint _totalSupply, uint8 _decimals, address _admin) public 
-        LnErc20Handler(_proxy, _tokenStorage,_name,_symbol, _totalSupply, _decimals, _admin ) {
+        LnBep20Handler(_proxy, _tokenStorage,_name,_symbol, _totalSupply, _decimals, _admin ) {
         
         mKeyName = _key;
         tokenStorage = _tokenStorage;
@@ -48,7 +48,7 @@ contract LnAsset is LnErc20Handler, IAsset, LnAddressCache {
     }
 
     function _mint(address account, uint256 amount) private  {
-        require(account != address(0), "ERC20: mint to the zero address");
+        require(account != address(0), "Bep20: mint to the zero address");
         _beforeTokenTransfer(address(0), account, amount);
 
         tokenStorage.setBalanceOf(account, tokenStorage.balanceOf(account).add(amount));
@@ -66,7 +66,7 @@ contract LnAsset is LnErc20Handler, IAsset, LnAddressCache {
     }
 
     function _burn(address account, uint256 amount) private {
-        require(account != address(0), "ERC20: burn from the zero address");
+        require(account != address(0), "Bep20: burn from the zero address");
         _beforeTokenTransfer(account, address(0), amount);
 
         tokenStorage.setBalanceOf(account, tokenStorage.balanceOf(account).sub(amount));

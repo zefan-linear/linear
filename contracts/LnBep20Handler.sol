@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 
-import "./IERC20.sol";
+import "./IBEP20.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 import "./SafeDecimalMath.sol";
 
@@ -9,7 +9,7 @@ import "./LnAdmin.sol";
 import "./LnProxyImpl.sol";
 import "./LnTokenStorage.sol";
 
-contract LnErc20Handler is IERC20, LnAdmin, LnProxyImpl {
+contract LnBep20Handler is IBEP20, LnAdmin, LnProxyImpl {
     using SafeMath for uint;
     using SafeDecimalMath for uint;
 
@@ -30,10 +30,11 @@ contract LnErc20Handler is IERC20, LnAdmin, LnProxyImpl {
         totalSupply = _totalSupply;
         decimals = _decimals;
     }
-    // // For BEP extension impl
-    // function getOwner() external view override returns (address) {
-    //     return tokenStorage.admin();
-    // }
+
+    function getOwner() public view override returns (address) {
+        
+        return tokenStorage.admin();
+    }
 
     function allowance(address owner, address spender) public view virtual override returns (uint) {
         return tokenStorage.allowance(owner, spender);

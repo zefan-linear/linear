@@ -14,8 +14,8 @@ module.exports = function (deployer, network, accounts) {
     //await lina.setOperator(kLinearStaking.address);
  // avoid to re-mint
     let kLinearFinance = await LinearFinance.deployed();
-    let linaProxyErc20Address = await kLinearFinance.proxy();
-    console.log("linaProxyErc20Address", linaProxyErc20Address);
+    let linaProxyBep20Address = await kLinearFinance.proxy();
+    console.log("linaProxyBep20Address", linaProxyBep20Address);
 
     let sendto = [
       ["0x219504cDb368E3E49c724bF8DeA41EdaBf1dC224", toUnit(1000000000)],

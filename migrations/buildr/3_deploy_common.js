@@ -13,7 +13,7 @@ const LnAssetSystem = artifacts.require("LnAssetSystem");
 const LnAsset = artifacts.require("LnAsset");
 const LnDefaultPrices = artifacts.require("LnDefaultPrices");
 const LnChainLinkPrices = artifacts.require("LnChainLinkPrices");
-const LnProxyERC20 = artifacts.require("LnProxyERC20");
+const LnProxyBEP20 = artifacts.require("LnProxyBEP20");
 const LnTokenStorage = artifacts.require("LnTokenStorage");
 const LnCollateralSystem = artifacts.require("LnCollateralSystem");
 const LnBuildBurnSystem = artifacts.require("LnBuildBurnSystem");
@@ -34,9 +34,9 @@ module.exports = function (deployer, network, accounts) {
     
     // lina token has deployed before main contract deploying.
     const kLinearFinance = await GetDeployed(LinearFinance);//LinearFinance.deployed();
-    let linaProxyErc20Address = await kLinearFinance.proxy();
-    console.log("linaProxyErc20Address", linaProxyErc20Address);
-    let klinaProxy = await LnProxyERC20.at(linaProxyErc20Address);
+    let linaProxyBep20Address = await kLinearFinance.proxy();
+    console.log("linaProxyBep20Address", linaProxyBep20Address);
+    let klinaProxy = await LnProxyBEP20.at(linaProxyBep20Address);
     
     if (network == "mainnet" || network == "ropsten"  || network == "bsctestnet")
       assert.ok(kLinearFinance, "LinearFinance was not deployed");
@@ -70,7 +70,7 @@ module.exports = function (deployer, network, accounts) {
 
     await deployer.link(SafeDecimalMath, LnExchangeSystem);
     let kLnExchangeSystem = await DeployIfNotExist(deployer, LnExchangeSystem, admin)
-    let kLnRewardLocker = await DeployIfNotExist(deployer, LnRewardLocker, admin, linaProxyErc20Address);
+    let kLnRewardLocker = await DeployIfNotExist(deployer, LnRewardLocker, admin, linaProxyBep20Address);
     let kLnFeeSystem;
     if (network == "ropsten" || network == "bsctestnet") {
       kLnFeeSystem = await DeployIfNotExist(deployer, LnFeeSystemTest, admin);

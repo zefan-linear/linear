@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 
-import "./IERC20.sol";
+import "./IBEP20.sol";
 import "./LnAdmin.sol";
 import "./SafeDecimalMath.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
@@ -12,7 +12,7 @@ import "@openzeppelin/contracts/utils/Address.sol";
 contract LnTokenLocker is LnAdmin, Pausable {
     using SafeMath for uint;
 
-    IERC20 private token;
+    IBEP20 private token;
     struct LockInfo {
         uint256 amount;
         uint256 lockTimestamp; // lock time at block.timestamp
@@ -22,7 +22,7 @@ contract LnTokenLocker is LnAdmin, Pausable {
     mapping (address => LockInfo) public lockData;
     
     constructor(address _token, address _admin) public LnAdmin(_admin) {
-        token = IERC20(_token);
+        token = IBEP20(_token);
     }
     
     function sendLockTokenMany(address[] calldata _users, uint256[] calldata _amounts, uint256[] calldata _lockdays) external onlyAdmin {
@@ -85,7 +85,7 @@ contract LnTokenLocker is LnAdmin, Pausable {
 contract LnTokenCliffLocker is LnAdmin, Pausable {
     using SafeMath for uint;
 
-    IERC20 private token;
+    IBEP20 private token;
     struct LockInfo {
         uint256 amount;
         uint256 lockTimestamp; // lock time at block.timestamp
@@ -94,7 +94,7 @@ contract LnTokenCliffLocker is LnAdmin, Pausable {
     mapping (address => LockInfo) public lockData;
     
     constructor(address _token, address _admin) public LnAdmin(_admin) {
-        token = IERC20(_token);
+        token = IBEP20(_token);
     }
     
     function sendLockTokenMany(address[] calldata _users, uint256[] calldata _amounts, uint256[] calldata _locktimes) external onlyAdmin {

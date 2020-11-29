@@ -1,9 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.24;
 
-interface IERC20 {
+interface IBEP20 {
     
     function name() external view returns (string memory);
+
+    function getOwner() external view returns (address);
 
     function symbol() external view returns (string memory);
 

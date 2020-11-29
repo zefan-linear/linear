@@ -53,7 +53,7 @@ contract LnProxyBase is LnAdmin {
         }
     }
 
-    //receive: It is executed on a call to the contract with empty calldata. This is the function that is executed on plain Ether transfers (e.g. via .send() or .transfer()).
+    //receive: It is executed on a call to the contract with empty calldata. This is the function that is executed on plain BNB transfers (e.g. via .send() or .transfer()).
     //fallback: can only rely on 2300 gas being available,
     receive() external payable {
         target.setMessageSender(msg.sender);

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 
-import "./IERC20.sol";
+import "./IBEP20.sol";
 import "./LnAdmin.sol";
 import "./LnOperatorModifier.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
@@ -248,7 +248,7 @@ contract LnSimpleStaking is
     using SafeMath for uint256;
     using SafeDecimalMath for uint256;
 
-    IERC20 public linaToken; // lina token proxy address
+    IBEP20 public linaToken; // lina token proxy address
     LnLinearStakingStorage public stakingStorage;
     uint256 public mEndBlock;
     address public mOldStaking;
@@ -270,13 +270,13 @@ contract LnSimpleStaking is
         uint256 _startBlock,
         uint256 _endBlock
     ) public LnAdmin(_admin) LnRewardCalculator(_rewardPerBlock, _startBlock) {
-        linaToken = IERC20(_linaToken);
+        linaToken = IBEP20(_linaToken);
         stakingStorage = LnLinearStakingStorage(_storage);
         mEndBlock = _endBlock;
     }
 
     function setLinaToken(address _linaToken) external onlyAdmin {
-        linaToken = IERC20(_linaToken);
+        linaToken = IBEP20(_linaToken);
     }
 
     function setPaused(bool _paused) external onlyAdmin {
@@ -655,7 +655,7 @@ contract LnSimpleStakingExtension is
     using SafeMath for uint256;
     using SafeDecimalMath for uint256;
 
-    IERC20 public linaToken; // lina token proxy address
+    IBEP20 public linaToken; // lina token proxy address
     uint256 public mEndBlock;
 
     //Handle old pool staking
@@ -680,7 +680,7 @@ contract LnSimpleStakingExtension is
         uint256 _endBlock,
         address _mOldSimpleStaking
     ) public LnAdmin(_admin) LnRewardCalculator(_rewardPerBlock, _startBlock) {
-        linaToken = IERC20(_linaToken);
+        linaToken = IBEP20(_linaToken);
         // stakingStorage = LnLinearStakingStorage(_storage);
         mEndBlock = _endBlock;
 
@@ -690,7 +690,7 @@ contract LnSimpleStakingExtension is
     }
 
     function setLinaToken(address _linaToken) external onlyAdmin {
-        linaToken = IERC20(_linaToken);
+        linaToken = IBEP20(_linaToken);
     }
 
     function setPaused(bool _paused) external onlyAdmin {
@@ -1001,7 +1001,7 @@ contract LnSimpleStakingNew is
     using SafeMath for uint256;
     using SafeDecimalMath for uint256;
 
-    IERC20 public linaToken; // lina token proxy address
+    IBEP20 public linaToken; // lina token proxy address
     LnSimpleStaking public simpleStaking;
     uint256 public mEndBlock;
     address public mOldStaking;
@@ -1025,13 +1025,13 @@ contract LnSimpleStakingNew is
         uint256 _startBlock,
         uint256 _endBlock
     ) public LnAdmin(_admin) LnRewardCalculator(_rewardPerBlock, _startBlock) {
-        linaToken = IERC20(_linaToken);
+        linaToken = IBEP20(_linaToken);
         simpleStaking = LnSimpleStaking(_staking);
         mEndBlock = _endBlock;
     }
 
     function setLinaToken(address _linaToken) external onlyAdmin {
-        linaToken = IERC20(_linaToken);
+        linaToken = IBEP20(_linaToken);
     }
 
     function setPaused(bool _paused) external onlyAdmin {

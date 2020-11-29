@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 
-import "./IERC20.sol";
+import "./IBEP20.sol";
 import "./LnAdmin.sol";
 import "./LnOperatorModifier.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
@@ -142,7 +142,7 @@ contract LnLinearStakingStorage is LnAdmin {
 contract LnLinearStaking is LnAdmin, Pausable, ILinearStaking {
     using SafeMath for uint256;
 
-    IERC20 public linaToken; // lina token proxy address
+    IBEP20 public linaToken; // lina token proxy address
     LnLinearStakingStorage public stakingStorage;
     
     constructor(
@@ -150,12 +150,12 @@ contract LnLinearStaking is LnAdmin, Pausable, ILinearStaking {
         address _linaToken,
         address _storage
     ) public LnAdmin(_admin) {
-        linaToken = IERC20(_linaToken);
+        linaToken = IBEP20(_linaToken);
         stakingStorage = LnLinearStakingStorage(_storage);
     }
 
     function setLinaToken(address _linaToken) external onlyAdmin {
-        linaToken = IERC20(_linaToken);
+        linaToken = IBEP20(_linaToken);
     }
 
     function setPaused(bool _paused) external onlyAdmin {
@@ -176,7 +176,7 @@ contract LnLinearStaking is LnAdmin, Pausable, ILinearStaking {
     uint256 public constant PRECISION_UINT = 1e23;
 
     function setLinaTokenAddress(address _token) external onlyAdmin {
-        linaToken = IERC20(_token);
+        linaToken = IBEP20(_token);
     }
 
     function setStakingListLimit(uint256 _limit) external onlyAdmin {

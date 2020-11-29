@@ -26,8 +26,8 @@ module.exports = function (deployer, network, accounts) {
     const admin = accounts[0];
 
     let kLinearFinance = await GetDeployed(LinearFinance);
-    let linaProxyErc20Address = await kLinearFinance.proxy();
-    console.log("linaProxyErc20Address", linaProxyErc20Address);
+    let linaProxyBep20Address = await kLinearFinance.proxy();
+    console.log("linaProxyBep20Address", linaProxyBep20Address);
 
     let kLnChainLinkPrices = await GetDeployed(LnChainLinkPrices);
     let kLnDebtSystem = await GetDeployed(LnDebtSystem);
@@ -172,7 +172,7 @@ module.exports = function (deployer, network, accounts) {
 //     kLnCollateralSystem = await GetDeployed(LnCollateralSystem);
 //     //添加抵押物信息
 //     await CallWithEstimateGas(kLnCollateralSystem.UpdateTokenInfo, 
-//        toBytes32("LINA"), linaProxyErc20Address, toBN(0), false
+//        toBytes32("LINA"), linaProxyBep20Address, toBN(0), false
 //     );
 
       //user oracleAddress call updateAll

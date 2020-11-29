@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 
-import "./IERC20.sol";
+import "./IBEP20.sol";
 import "./LnAdmin.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 
@@ -21,14 +21,14 @@ contract LnRewardLocker is LnAdmin {
     uint256 public constant maxRewardArrayLen = 100;
 
     address feeSysAddr;
-    IERC20 public linaToken;
+    IBEP20 public linaToken;
 
     constructor(address _admin, address linaAddress) public LnAdmin(_admin ) {
-        linaToken = IERC20(linaAddress);
+        linaToken = IBEP20(linaAddress);
     }
 
     function setLinaAddress(address _token) external onlyAdmin {
-        linaToken = IERC20(_token);
+        linaToken = IBEP20(_token);
     }
 
     function Init(address _feeSysAddr) external onlyAdmin {

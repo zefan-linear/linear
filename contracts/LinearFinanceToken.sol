@@ -3,12 +3,12 @@ pragma solidity ^0.6.12;
 
 import "./LnAdmin.sol";
 import "./LnTokenStorage.sol";
-import "./LnErc20Handler.sol";
+import "./LnBep20Handler.sol";
 import "./LnOperatorModifier.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 import "@openzeppelin/contracts/utils/Pausable.sol";
 
-contract LinearFinance is LnErc20Handler {
+contract LinearFinance is LnBep20Handler {
     
     string public constant TOKEN_NAME = "Linear Token";
     string public constant TOKEN_SYMBOL = "LINA";
@@ -22,13 +22,13 @@ contract LinearFinance is LnErc20Handler {
         uint _totalSupply
     )
         public
-        LnErc20Handler(_proxy, _tokenStorage, TOKEN_NAME, TOKEN_SYMBOL, _totalSupply, DECIMALS, _admin)
+        LnBep20Handler(_proxy, _tokenStorage, TOKEN_NAME, TOKEN_SYMBOL, _totalSupply, DECIMALS, _admin)
     {
     }
     
     //
     function _mint(address account, uint256 amount) private  {
-        require(account != address(0), "ERC20: mint to the zero address");
+        require(account != address(0), "BEP20: mint to the zero address");
         require(totalSupply.add(amount) <= MAX_SUPPLY, "Can not mint over max supply");
         _beforeTokenTransfer(address(0), account, amount);
 
@@ -43,7 +43,7 @@ contract LinearFinance is LnErc20Handler {
     }
 
    function _burn(address account, uint256 amount) private {
-        require(account != address(0), "ERC20: burn from the zero address");
+        require(account != address(0), "BEP20: burn from the zero address");
         _beforeTokenTransfer(account, address(0), amount);
 
         tokenStorage.setBalanceOf(account, tokenStorage.balanceOf(account).sub(amount));
@@ -58,7 +58,7 @@ contract LinearFinance is LnErc20Handler {
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal override {
         super._beforeTokenTransfer(from, to, amount);
 
-        require(!paused, "ERC20Pausable: token transfer while paused");
+        require(!paused, "BEP20Pausable: token transfer while paused");
     }
 
     ////////////////////////////////////////////////////// paused
