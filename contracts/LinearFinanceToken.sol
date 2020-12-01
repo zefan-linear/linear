@@ -13,7 +13,7 @@ contract LinearFinance is LnBep20Handler {
     string public constant TOKEN_NAME = "Linear Token";
     string public constant TOKEN_SYMBOL = "LINA";
     uint8 public constant DECIMALS = 18;
-    uint256 public constant MAX_SUPPLY = 10000000000e18;
+    uint256 public constant MAX_SUPPLY = 20000000000e18;
 
     constructor(
         address payable _proxy,

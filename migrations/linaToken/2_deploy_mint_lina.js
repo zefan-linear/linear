@@ -18,8 +18,8 @@ module.exports = function (deployer, network, accounts) {
     console.log("linaProxyBep20Address", linaProxyBep20Address);
 
     let sendto = [
-      ["0x219504cDb368E3E49c724bF8DeA41EdaBf1dC224", toUnit(1000000000)],
-      ["0x6601f1e8eBA765cd176eBfC689634BB1642a2525", toUnit(1000000000)],
+      // ["0x219504cDb368E3E49c724bF8DeA41EdaBf1dC224", toUnit(1000000)],
+      // ["0x6601f1e8eBA765cd176eBfC689634BB1642a2525", toUnit(1000000)],
     ];
     
     for (let i=0; i < sendto.length; i++ ) {

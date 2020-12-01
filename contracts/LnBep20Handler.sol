@@ -100,6 +100,19 @@ contract LnBep20Handler is IBEP20, LnAdmin, LnProxyImpl {
     }
 
 
+    function increaseAllowance(address spender, uint256 addedValue) public returns (bool) {
+        address sender = messageSender;
+        tokenStorage.setAllowance(sender, spender, tokenStorage.allowance(sender, spender).add(addedValue));
+        return true;
+    }
+
+
+    function decreaseAllowance(address spender, uint256 subtractedValue) public returns (bool) {
+        address sender = messageSender;
+        tokenStorage.setAllowance(sender, spender, tokenStorage.allowance(sender, spender).sub(subtractedValue, "BEP20: decreased allowance below zero"));
+        return true;
+    }
+
     function approve(address spender, uint value) public virtual override optionalProxy returns (bool) {
         address sender = messageSender;
 
@@ -121,6 +134,7 @@ contract LnBep20Handler is IBEP20, LnAdmin, LnProxyImpl {
         uint value
     ) internal {
         proxy.Log3( abi.encode(value),  TRANSFER_SIG, addressToBytes32(from), addressToBytes32(to) );
+        emit Transfer(from, to, value);
     }
 
     event Approval(address indexed owner, address indexed spender, uint value);
@@ -132,6 +146,7 @@ contract LnBep20Handler is IBEP20, LnAdmin, LnProxyImpl {
         uint value
     ) internal {
         proxy.Log3( abi.encode(value),  APPROVAL_SIG, addressToBytes32(owner), addressToBytes32(spender) );
+        emit Approval(owner, spender, value);
     }
 
     event TokenStorageUpdated(address newTokenStorage);

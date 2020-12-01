@@ -1,11 +1,11 @@
 {
   "LnTokenStorage": {
-    "address": "0x14fff9808d3C2dC12cc08BDcb9E391D618D3ed06"
+    "address": "0x8b48C34afD6ac87D4a2444B9BFE28B0493B627B0"
   },
   "LnProxyBEP20": {
-    "address": "0x7E41f4057E46825a8c17f5D854d6768694E33D4D"
+    "address": "0xf391efB1dDdcCFCF041B83579027a7BFbe4d02e1"
   },
   "LinearFinance": {
-    "address": "0x898e5181C8cBC8C2B373826A73D035fc13b754ff"
+    "address": "0xA2eDAb949904EcebA310485BC59F40F9d62e6fd8"
   }
 }

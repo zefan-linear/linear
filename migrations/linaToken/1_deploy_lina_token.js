@@ -13,7 +13,7 @@ module.exports = function (deployer, network, accounts) {
     let proxyBep20 = await DeployIfNotExist(deployer, LnProxyBEP20, admin);
     let lina;
     if (network == "bsctestnet" ){
-      lina = await DeployIfNotExist(deployer, LinearFinance, proxyBep20.address, tokenstorage.address, admin, "10000000000");
+      lina = await DeployIfNotExist(deployer, LinearFinance, proxyBep20.address, tokenstorage.address, admin, "0");
     } else {
       lina = await DeployIfNotExist(deployer, LinearFinance, proxyBep20.address, tokenstorage.address, admin, "0");
     }
