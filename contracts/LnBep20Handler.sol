@@ -29,6 +29,7 @@ contract LnBep20Handler is IBEP20, LnAdmin, LnProxyImpl {
         symbol = _symbol;
         totalSupply = _totalSupply;
         decimals = _decimals;
+
     }
 
     function getOwner() public view override returns (address) {

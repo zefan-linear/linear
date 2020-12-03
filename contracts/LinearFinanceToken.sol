@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/utils/Pausable.sol";
 
 contract LinearFinance is LnBep20Handler {
     
-    string public constant TOKEN_NAME = "Linear Token";
+    string public constant TOKEN_NAME = "Linear Finance";
     string public constant TOKEN_SYMBOL = "LINA";
     uint8 public constant DECIMALS = 18;
     uint256 public constant MAX_SUPPLY = 20000000000e18;

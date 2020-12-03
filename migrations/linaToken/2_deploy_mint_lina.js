@@ -1,6 +1,8 @@
-const {DeployWithEstimate, DeployIfNotExist, GetDeployed, getDeployedAddress} = require("../../utility/truffle-tool");
+const {DeployWithEstimate, DeployIfNotExist, GetDeployed, getDeployedAddress, CallWithEstimateGas} = require("../../utility/truffle-tool");
 
 const LinearFinance = artifacts.require("LinearFinance");
+const Bep20Bridge = artifacts.require("LnBep20Bridge");
+
 
 const { BN, toBN, toWei, fromWei, hexToAscii } = require('web3-utils');
 const toUnit = amount => toBN(toWei(amount.toString(), 'ether'));
@@ -18,7 +20,7 @@ module.exports = function (deployer, network, accounts) {
     console.log("linaProxyBep20Address", linaProxyBep20Address);
 
     let sendto = [
-      // ["0x219504cDb368E3E49c724bF8DeA41EdaBf1dC224", toUnit(1000000)],
+      ["0xa9F950ce2B5594676AE5f74afDCE95728A67A81b", toUnit(100000000)],
       // ["0x6601f1e8eBA765cd176eBfC689634BB1642a2525", toUnit(1000000)],
     ];
     
@@ -29,5 +31,8 @@ module.exports = function (deployer, network, accounts) {
       await kLinearFinance.mint(v[0], v[1], {gas: gaslimit});
     }
 
+    let kLnBep20Bridge = await DeployIfNotExist(deployer, Bep20Bridge, admin, admin, kLinearFinance.address, toUnit(100000000));
+    
+    await CallWithEstimateGas(kLinearFinance.approve, kLnBep20Bridge.address, toUnit(100000000));
   });
 };

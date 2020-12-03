@@ -1,11 +1,86 @@
 {
   "LnTokenStorage": {
-    "address": "0x8b48C34afD6ac87D4a2444B9BFE28B0493B627B0"
+    "address": "0xeDEc275173661c12043fF5963Fb4D1Dedc6457c9"
   },
   "LnProxyBEP20": {
-    "address": "0xf391efB1dDdcCFCF041B83579027a7BFbe4d02e1"
+    "address": "0x9e2ab6B190B25FD1E00F0f182a78ca1Abd24F0F1"
   },
   "LinearFinance": {
-    "address": "0xA2eDAb949904EcebA310485BC59F40F9d62e6fd8"
+    "address": "0x3a9577c347A89B97e4A8ae3e95c6340D5160A5A7"
+  },
+  "LnBep20Bridge": {
+    "address": "0xa0A0d44da57c05236E841De49286F336de231eF6"
+  },
+  "SafeDecimalMath": {
+    "address": "0x0431d43ba4E9AEE06C3eae6CF798009594FFD2C1"
+  },
+  "LnAssetSystem": {
+    "address": "0xfECB7Ea82C4ddA83945ED649fFD07eF8F51d231c"
+  },
+  "LnConfig": {
+    "address": "0x2069181598e7029333740eB0C4066CEeC37f9cc5"
+  },
+  "LnAccessControl": {
+    "address": "0x61030Ab1a0bCC985074FDE5B7A8FD18dBbBa2A93"
+  },
+  "LnChainLinkPrices": {
+    "address": "0xDF730C9A9CBA5A2d45E1fee144936630C1466560"
+  },
+  "LnDebtSystem": {
+    "address": "0x5d0bBF76fcd9edC0785D922064c83e2A4d6Dd410"
+  },
+  "LnCollateralSystem": {
+    "address": "0x26e20dBaa63e1a8c369f79b55ec0ddf7324F08d3"
+  },
+  "LnBuildBurnSystem": {
+    "address": "0xAc5E34F2ee2065dFA77298845f75C57e08A50703"
+  },
+  "LnExchangeSystem": {
+    "address": "0x02f62250eB06DDef56eD748BA71abdD8F069954c"
+  },
+  "LnRewardLocker": {
+    "address": "0xDf6EbcbdA75c337C270dd55c2d182F7fADBc351F"
+  },
+  "LnFeeSystemTest": {
+    "address": "0x39a4a6200d1C00bFe33b15E10178Ff6A0f29D5f3"
+  },
+  "LnProxyBEP20_lUSD": {
+    "address": "0x6064F0aA5E4182a85aD54204c5Cb35587360CaC0"
+  },
+  "LnTokenStorage_lUSD": {
+    "address": "0x9Ae843DA386676cBd68480C7eB48CD6Da9Dac91b"
+  },
+  "LnAsset_lUSD": {
+    "address": "0xC0F19feFFEbB9d2Acdd2f5537b159Ed5CBC668FB"
+  },
+  "LnFeeSystem": {
+    "address": "0xF838336A6459ee8A6bcc5fd7465Ec573f76b83dB"
+  },
+  "LnProxyBEP20_lBTC": {
+    "address": "0xc204aD9736Df91A088D26A2D6D9b285BF0bBDeF9"
+  },
+  "LnTokenStorage_lBTC": {
+    "address": "0xCfb53A4EF7785fA41D12C55aB126e03b3e0Ddb54"
+  },
+  "LnAsset_lBTC": {
+    "address": "0x1ea24f94B5a1Ef4D7cD4c471668df1d15124358A"
+  },
+  "LnProxyBEP20_lETH": {
+    "address": "0x5674432DE2235d070bD031AE535C5b2cb03051a0"
+  },
+  "LnTokenStorage_lETH": {
+    "address": "0x87EfB001B735aC30397169b6132866D7149aa048"
+  },
+  "LnAsset_lETH": {
+    "address": "0x8dE0342F213725091412993fddFb8B1f9383b40d"
+  },
+  "LnProxyBEP20_lHB10": {
+    "address": "0xDBc61c17544A6bf5dbec50f4508E503b6a1DCC9a"
+  },
+  "LnTokenStorage_lHB10": {
+    "address": "0x3Af60FFfF96000807954592770eEB7Bf9D0FFe1b"
+  },
+  "LnAsset_lHB10": {
+    "address": "0xF5cF2c9f2873A9A16055883817c4517b77B85710"
   }
 }
