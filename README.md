@@ -16,23 +16,29 @@ Linear Finance (“Linear”) is a non-custodial, cross-chain compatible, delta-
 # Getting Started
 You are required to have baisc smart contract and solidity knowledge to run this project.
 
-To start, clone the repo and run the following command inside the project directory to install [Node.js][NODE] required packages.
+To start, clone the repo and run the following command inside the project directory to install node.js required packages. If you don't already have node.js installed, click [here][NODE] 
 ```sh
-$ yarn install
+$ npm install
 ```
+## Prerequesites
+Intall [Truffle][TRUFFLE] and [OpenZeppelin][OZ] inside the project directory.
 
-## Building
-Build the smart contracts with the following command:
 ```sh
-$ yarn compile
+# Install Truffle
+$ npm install truffle -g
+$ yarn
+
+#Install OpenZeppelin
+$ npm install @openzeppelin/cli
+$ npx openzeppelin init
 ```
 
 ## Deployment
 You can deploy the smart contracts on currently supported networks
-- [Ganache][GAN] (for development purpose)
-- Ropsten
-- Kovan
-- Mainnet
+-- [Ganache][GAN] (for development purpose)
+-- Ropsten - 
+-- Kovan
+-- Mainnet
 
 ### Variables
 The followings are the variables required when deploy to the network.

@@ -5,6 +5,7 @@ import "./LnBep20Handler.sol";
 import "./IAsset.sol";
 import "./LnAccessControl.sol";
 import "./LnAddressCache.sol";
+import "./LnSharePool.sol";
 
 contract LnAsset is LnBep20Handler, IAsset, LnAddressCache {
     bytes32  mKeyName;
@@ -12,6 +13,7 @@ contract LnAsset is LnBep20Handler, IAsset, LnAddressCache {
     // -------------------------------------------------------
     // need set before system running value.
     LnAccessControl accessCtrl;
+    LnSharePool sharePool;
 
     function keyName() override external view returns (bytes32)
     {
@@ -34,8 +36,10 @@ contract LnAsset is LnBep20Handler, IAsset, LnAddressCache {
     function updateAddressCache( LnAddressStorage _addressStorage ) onlyAdmin public override
     {
         accessCtrl = LnAccessControl(_addressStorage.getAddressWithRequire( "LnAccessControl", "LnAccessControl address not valid" ));
+        sharePool = LnSharePool(_addressStorage.getAddressWithRequire( "LnSharePool", "LnSharePool address not valid" ));
 
         emit updateCachedAddress( "LnAccessControl", address(accessCtrl) );
+        emit updateCachedAddress( "LnSharePool", address(sharePool) );
     }
     // -----------------------------------------------
     modifier OnlyIssueAssetRole(address _address) {
@@ -73,5 +77,15 @@ contract LnAsset is LnBep20Handler, IAsset, LnAddressCache {
         totalSupply = totalSupply.sub(amount);
         emitTransfer(account, address(0), amount);
     }
+
+    function getAggreTotalSupply() public view returns(uint256 aggrSupply) {
+
+        require(address(this) != address(0), "asset address error!");
+
+        require(address(sharePool) != address(0), "share pool address error!");
+        
+        (aggrSupply, ) = sharePool.getSupply(address(this));
+
+    } 
 }
 
