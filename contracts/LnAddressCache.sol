@@ -46,7 +46,7 @@ interface LnAddressCache  {
     event   updateCachedAddress( bytes32 name, address addr );
 }
 
-contract testAddressCache  is LnAddressCache, LnAdmin {
+contract TestAddressCache  is LnAddressCache, LnAdmin {
     address public addr1;
     address public addr2;
     
