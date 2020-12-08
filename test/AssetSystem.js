@@ -37,6 +37,10 @@ contract('LnAssetSystem', async (accounts)=> {
             const lina = await LnAsset.new( toBytes32("LINA"), linaProxy.address, linaData.address, "LINA", "LINA SYMBOL", 0, 10, admin );
             await assets.addAsset( lina.address );
 
+            console.log("----get aggre supply----:");
+            let aggr = await lina.getAggreTotalSupply();
+            console.log(aggr);
+
             let count1 = await assets.assetNumber();
             //console.log( count1 );
             assert.equal( count1.valueOf(), 1 );

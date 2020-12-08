@@ -24,6 +24,7 @@ const LnExchangeSystem = artifacts.require("LnExchangeSystem");
 const LnRewardLocker = artifacts.require("LnRewardLocker");
 const LnFeeSystem = artifacts.require("LnFeeSystem");
 const LnFeeSystemTest = artifacts.require("LnFeeSystemTest");
+const LnSharePool = artifacts.require("LnSharePool");
 const {newAssetToken} = require("../helpers");
 
 const BUILD_RATIO = toUnit("0.2");
@@ -79,6 +80,9 @@ module.exports = function (deployer, network, accounts) {
 
     }
 
+    //aggre debt pool
+    let kLnSharePool = await DeployIfNotExist(deployer, LnSharePool, admin);
+
     await CallWithEstimateGas(kLnRewardLocker.Init, kLnFeeSystem.address);
     let rewardDistributer = admin; // TODO: need a contract?
     await CallWithEstimateGas(kLnFeeSystem.Init, kLnExchangeSystem.address, rewardDistributer);
@@ -113,6 +117,8 @@ module.exports = function (deployer, network, accounts) {
     registContract("LnFeeSystem", kLnFeeSystem);
     registContract("LnRewardLocker", kLnRewardLocker);
     registContract("LnExchangeSystem", kLnExchangeSystem);
+    registContract("LnSharePool", kLnSharePool);
+    
   
     await CallWithEstimateGas(kLnAssetSystem.updateAll, contractNames, contractAddrs);
 

@@ -29,6 +29,7 @@
     "solc": "^0.6.12",
     "string-format": "^2.0.0",
     "truffle": "^5.1.56",
-    "truffle-hdwallet-provider": "^1.0.17"
+    "@truffle/hdwallet-provider": "^1.0.17",
+    "dotenv": ""
   }
 }

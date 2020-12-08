@@ -2,9 +2,8 @@
 pragma solidity ^0.6.12;
 
 import "./LnObserver.sol";
-import "./ISharePool.sol";
 
-contract LnSharePool is LnObserver, ISharePool {
+contract LnSharePool is LnObserver {
 
     event UpdateTotalAsset(address _asset, uint256 _oldAmount, uint256 _nowAmount);
 
@@ -70,11 +69,10 @@ contract LnSharePool is LnObserver, ISharePool {
         return(aID_);
     }
 
-    function getSupply(address _asset) external view override returns(uint256,uint256) {
+    function getSupply(address _asset) external view returns(uint256,uint256) {
         require(_asset != address(0), "getSupply param _asset err!");
 
         return (assetTotalSupply_[_asset].totalSupply, assetTotalSupply_[_asset].selfSupply);
     }
 
-    
 }

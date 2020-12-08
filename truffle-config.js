@@ -18,6 +18,8 @@
  *
  */
 
+require('dotenv').config();
+
 if (process.env.NETWORK == null) {
   process.env.NETWORK = "development"; // default
 }
@@ -31,7 +33,7 @@ const migrations_directory = process.env.MIGRATIONS_DIR ? process.env.MIGRATIONS
 console.log("\ncontracts_build_directory", contracts_build_directory);
 console.log("\nmigrations_directory", migrations_directory);
 
-const HDWalletProvider = require("truffle-hdwallet-provider");
+const HDWalletProvider = require("@truffle/hdwallet-provider");
 // const infuraKey = "fj4jll3k.....";
 //
 // const fs = require('fs');
@@ -43,7 +45,7 @@ function CreateHDWallet(mnemonic, providerUrl) {
 }
 
 //private wallet address.
-if (privatekey != null) {
+if (privatekey != null && process.env.INFURA_PROJECT_ID != null) {
   let wallet = CreateHDWallet(privatekey, "https://ropsten.infura.io/v3/" + process.env.INFURA_PROJECT_ID);
   console.log("\n* wallet address:", wallet.addresses[0]);
 }
@@ -132,18 +134,9 @@ module.exports = {
         timeoutBlocks: 2000,
         networkCheckTimeout: 50000,
         skipDryRun: true
-    },
-    bsctestnet: {
-        provider: () => CreateHDWallet(privatekey,  "https://data-seed-prebsc-1-s1.binance.org:8545"),
-        network_id: "*",       //
-        gas: 30000000,        // Ropsten has a lower block limit than mainnet
-        gasPrice: process.env.ETH_GAS_PRICE?process.env.ETH_GAS_PRICE:250000000000,
-        confirmations: 0,    // # of confs to wait between deployments. (default: 0)
-        timeoutBlocks: 2000,  // # of blocks before a deployment times out  (minimum/default: 50)
-        networkCheckTimeout: 500000,
-        skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     }
   },
+
   // Set default mocha options here, use special reporters etc.
   mocha: {
     // timeout: 100000
